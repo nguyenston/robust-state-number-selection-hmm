@@ -1,0 +1,468 @@
+======================================================================
+MOVEMENT HMM STATISTICS
+Individual: elephant 8
+Generated:  2026-10-31T15:53:41.838
+======================================================================
+
+--- Model Legend (used throughout this file and figure filenames) ---
+  base : StepAngleEmission — Gaussian log-step + WrappedCauchy turn angle
+         (correctly specified: circular topology, bimodal at low ρ)
+  alt1 : GaussianEmission(z_log_step, turn_angle) with full 2×2 covariance
+         (topologically wrong: Gaussian cannot wrap around ±π)
+  alt2 : StepAngleCardEmission — Gaussian log-step + Cardioid turn angle
+         (correct topology, limited expressiveness: ρ capped at 0.5, strictly unimodal)
+
+--- Data Summary ---
+Observations:      15955
+Trials:            2
+Split gaps (hr):   85.65
+Log-step (nats):   mean=5.584  std=1.937  min=-11.513  max=11.033
+Step (meters):     median=437.9  max=61855.0
+
+──────────────────────────────────────────────────────────────────────
+[base] StepAngleEmission (Gaussian log-step + WrappedCauchy angle)
+──────────────────────────────────────────────────────────────────────
+K      LL            BIC           ICL           KL discrepancies per component
+K=1    -46758.1      93554.9       93554.9       [63.3068]  
+K=2    -41202.7      82511.8       87612.5       [54.1112  61.4237]  ← ICL
+K=3    -39886.3      79966.2       89929.8       [52.8784  56.5712  54.9668]  
+K=4    -39473.5      79247.1       92977.6       [53.6391  49.0329  54.5326  46.3797]  ← ACDC
+K=5    -39052.9      78531.5       90506.2       [53.3925  49.4939  50.9807  31.3244  61.5572]  
+K=6    -39113.9      78798.8       93189.4       [59.8601  50.6433  50.2592  51.0946  32.8031  45.5285]  
+K=7    -38734.5      78204.4       91476.7       [48.9660  51.2794  10.5555  61.3501  49.6374  52.3373  13.6587]  
+K=8    -38381.2      77681.9       94772.8       [50.3317  44.4076  25.4549  72.0348  52.7172  49.6163  72.0361  47.3586]  ← BIC
+
+State composition at K=1:
+  State 1 : 100.0%  step_median≈    266m  WC_μ=+0.085  WC_ρ=0.521
+             step (m):  p5=3  p25=140  p50=438  p75=969  p95=2430
+             angle:    R̄=0.521  circ_mean=+0.085 rad  fwd(<π/4)=59.2%  side=32.0%  rev(>3π/4)=8.8%
+
+State composition at K=2 [ICL]:
+  State 1 :  23.2%  step_median≈     24m  WC_μ=+0.218  WC_ρ=0.107
+             step (m):  p5=1  p25=4  p50=17  p75=75  p95=236
+             angle:    R̄=0.078  circ_mean=+0.343 rad  fwd(<π/4)=28.5%  side=49.0%  rev(>3π/4)=22.5%
+  State 2 :  76.8%  step_median≈    622m  WC_μ=+0.077  WC_ρ=0.668
+             step (m):  p5=127  p25=323  p50=628  p75=1188  p95=2662
+             angle:    R̄=0.656  circ_mean=+0.076 rad  fwd(<π/4)=68.5%  side=26.8%  rev(>3π/4)=4.7%
+
+State composition at K=3:
+  State 1 :  26.6%  step_median≈   1343m  WC_μ=+0.081  WC_ρ=0.727
+             step (m):  p5=584  p25=956  p50=1416  p75=2136  p95=3555
+             angle:    R̄=0.735  circ_mean=+0.080 rad  fwd(<π/4)=76.0%  side=20.6%  rev(>3π/4)=3.4%
+  State 2 :  55.0%  step_median≈    359m  WC_μ=+0.069  WC_ρ=0.602
+             step (m):  p5=85  p25=210  p50=377  p75=622  p95=1215
+             angle:    R̄=0.591  circ_mean=+0.069 rad  fwd(<π/4)=62.5%  side=31.8%  rev(>3π/4)=5.7%
+  State 3 :  18.3%  step_median≈     13m  WC_μ=+0.761  WC_ρ=0.044
+             step (m):  p5=1  p25=3  p50=8  p75=34  p95=112
+             angle:    R̄=0.033  circ_mean=+1.651 rad  fwd(<π/4)=25.2%  side=48.8%  rev(>3π/4)=26.0%
+
+State composition at K=4 [ACDC]:
+  State 1 :  46.5%  step_median≈    700m  WC_μ=+0.105  WC_ρ=0.589
+             step (m):  p5=231  p25=457  p50=714  p75=1098  p95=2051
+             angle:    R̄=0.584  circ_mean=+0.108 rad  fwd(<π/4)=62.3%  side=31.6%  rev(>3π/4)=6.1%
+  State 2 :  10.2%  step_median≈   1963m  WC_μ=+0.040  WC_ρ=0.847
+             step (m):  p5=1036  p25=1523  p50=2087  p75=2785  p95=4265
+             angle:    R̄=0.862  circ_mean=+0.035 rad  fwd(<π/4)=88.6%  side=10.0%  rev(>3π/4)=1.4%
+  State 3 :  18.1%  step_median≈     13m  WC_μ=+1.881  WC_ρ=0.034
+             step (m):  p5=1  p25=3  p50=8  p75=34  p95=163
+             angle:    R̄=0.055  circ_mean=+2.441 rad  fwd(<π/4)=23.0%  side=49.4%  rev(>3π/4)=27.6%
+  State 4 :  25.2%  step_median≈    223m  WC_μ=+0.041  WC_ρ=0.670
+             step (m):  p5=55  p25=121  p50=212  p75=338  p95=651
+             angle:    R̄=0.672  circ_mean=+0.032 rad  fwd(<π/4)=67.8%  side=28.9%  rev(>3π/4)=3.3%
+
+State composition at K=5:
+  State 1 :  44.4%  step_median≈    721m  WC_μ=+0.104  WC_ρ=0.622
+             step (m):  p5=276  p25=487  p50=735  p75=1111  p95=2017
+             angle:    R̄=0.625  circ_mean=+0.110 rad  fwd(<π/4)=65.8%  side=29.0%  rev(>3π/4)=5.2%
+  State 2 :  10.4%  step_median≈   2006m  WC_μ=+0.043  WC_ρ=0.831
+             step (m):  p5=1069  p25=1554  p50=2118  p75=2818  p95=4308
+             angle:    R̄=0.849  circ_mean=+0.032 rad  fwd(<π/4)=87.3%  side=11.2%  rev(>3π/4)=1.5%
+  State 3 :  32.1%  step_median≈    192m  WC_μ=+0.043  WC_ρ=0.530
+             step (m):  p5=40  p25=101  p50=187  p75=303  p95=620
+             angle:    R̄=0.519  circ_mean=+0.033 rad  fwd(<π/4)=56.4%  side=36.2%  rev(>3π/4)=7.4%
+  State 4 :   0.2%  step_median≈      2m  WC_μ=+1.944  WC_ρ=0.303
+             step (m):  p5=0  p25=0  p50=2  p75=61  p95=7916
+             angle:    R̄=0.408  circ_mean=+1.893 rad  fwd(<π/4)=16.0%  side=56.0%  rev(>3π/4)=28.0%
+  State 5 :  13.0%  step_median≈      5m  WC_μ=+2.695  WC_ρ=0.083
+             step (m):  p5=1  p25=2  p50=4  p75=9  p95=25
+             angle:    R̄=0.092  circ_mean=+2.721 rad  fwd(<π/4)=21.9%  side=47.8%  rev(>3π/4)=30.3%
+
+State composition at K=6:
+  State 1 :  14.6%  step_median≈      7m  WC_μ=+2.438  WC_ρ=0.059
+             step (m):  p5=1  p25=3  p50=5  p75=14  p95=47
+             angle:    R̄=0.076  circ_mean=+2.559 rad  fwd(<π/4)=22.4%  side=48.6%  rev(>3π/4)=29.0%
+  State 2 :   0.1%  step_median≈      0m  WC_μ=+2.497  WC_ρ=0.152
+             step (m):  p5=0  p25=0  p50=0  p75=0  p95=20480
+             angle:    R̄=0.170  circ_mean=+2.513 rad  fwd(<π/4)=25.0%  side=41.7%  rev(>3π/4)=33.3%
+  State 3 :  33.5%  step_median≈    993m  WC_μ=+0.103  WC_ρ=0.675
+             step (m):  p5=453  p25=711  p50=1030  p75=1527  p95=2680
+             angle:    R̄=0.682  circ_mean=+0.103 rad  fwd(<π/4)=70.6%  side=25.5%  rev(>3π/4)=3.9%
+  State 4 :  41.6%  step_median≈    310m  WC_μ=+0.061  WC_ρ=0.525
+             step (m):  p5=73  p25=182  p50=307  p75=485  p95=928
+             angle:    R̄=0.517  circ_mean=+0.061 rad  fwd(<π/4)=56.6%  side=35.9%  rev(>3π/4)=7.5%
+  State 5 :   5.1%  step_median≈    140m  WC_μ=+0.035  WC_ρ=0.769
+             step (m):  p5=29  p25=61  p50=98  p75=166  p95=364
+             angle:    R̄=0.814  circ_mean=+0.017 rad  fwd(<π/4)=81.0%  side=18.4%  rev(>3π/4)=0.6%
+  State 6 :   5.1%  step_median≈   2327m  WC_μ=+0.031  WC_ρ=0.874
+             step (m):  p5=1342  p25=1896  p50=2419  p75=3231  p95=4478
+             angle:    R̄=0.896  circ_mean=+0.017 rad  fwd(<π/4)=91.2%  side=7.8%  rev(>3π/4)=1.0%
+
+State composition at K=7:
+  State 1 :   9.1%  step_median≈   2098m  WC_μ=+0.040  WC_ρ=0.837
+             step (m):  p5=1108  p25=1651  p50=2210  p75=2892  p95=4368
+             angle:    R̄=0.852  circ_mean=+0.029 rad  fwd(<π/4)=87.5%  side=11.0%  rev(>3π/4)=1.4%
+  State 2 :  36.1%  step_median≈    222m  WC_μ=+0.034  WC_ρ=0.516
+             step (m):  p5=45  p25=116  p50=213  p75=346  p95=705
+             angle:    R̄=0.516  circ_mean=+0.031 rad  fwd(<π/4)=56.1%  side=36.5%  rev(>3π/4)=7.4%
+  State 3 :   0.1%  step_median≈    326m  WC_μ=+0.494  WC_ρ=0.964
+             step (m):  p5=181  p25=290  p50=402  p75=581  p95=715
+             angle:    R̄=0.971  circ_mean=+0.538 rad  fwd(<π/4)=93.8%  side=6.2%  rev(>3π/4)=0.0%
+  State 4 :  13.4%  step_median≈      6m  WC_μ=+2.591  WC_ρ=0.075
+             step (m):  p5=1  p25=3  p50=5  p75=10  p95=29
+             angle:    R̄=0.083  circ_mean=+2.669 rad  fwd(<π/4)=22.5%  side=47.5%  rev(>3π/4)=29.9%
+  State 5 :   0.1%  step_median≈      0m  WC_μ=+2.385  WC_ρ=0.182
+             step (m):  p5=0  p25=0  p50=0  p75=3774  p95=18522
+             angle:    R̄=0.234  circ_mean=+2.492 rad  fwd(<π/4)=23.1%  side=38.5%  rev(>3π/4)=38.5%
+  State 6 :  40.9%  step_median≈    789m  WC_μ=+0.107  WC_ρ=0.641
+             step (m):  p5=323  p25=539  p50=801  p75=1199  p95=2129
+             angle:    R̄=0.643  circ_mean=+0.114 rad  fwd(<π/4)=67.3%  side=27.9%  rev(>3π/4)=4.8%
+  State 7 :   0.4%  step_median≈    141m  WC_μ=+0.088  WC_ρ=0.926
+             step (m):  p5=26  p25=45  p50=80  p75=216  p95=387
+             angle:    R̄=0.995  circ_mean=+0.101 rad  fwd(<π/4)=100.0%  side=0.0%  rev(>3π/4)=0.0%
+
+State composition at K=8 [BIC]:
+  State 1 :  42.2%  step_median≈    361m  WC_μ=+0.062  WC_ρ=0.585
+             step (m):  p5=106  p25=220  p50=356  p75=541  p95=984
+             angle:    R̄=0.574  circ_mean=+0.054 rad  fwd(<π/4)=61.2%  side=32.6%  rev(>3π/4)=6.2%
+  State 2 :   4.3%  step_median≈   2396m  WC_μ=+0.027  WC_ρ=0.890
+             step (m):  p5=1374  p25=1937  p50=2460  p75=3292  p95=4576
+             angle:    R̄=0.908  circ_mean=+0.024 rad  fwd(<π/4)=92.6%  side=6.5%  rev(>3π/4)=0.9%
+  State 3 :   3.6%  step_median≈    145m  WC_μ=+0.080  WC_ρ=0.830
+             step (m):  p5=39  p25=75  p50=111  p75=165  p95=318
+             angle:    R̄=0.923  circ_mean=+0.093 rad  fwd(<π/4)=93.2%  side=6.8%  rev(>3π/4)=0.0%
+  State 4 :   0.0%  step_median≈    486m  WC_μ=-0.350  WC_ρ=1.000
+  State 5 :   4.3%  step_median≈      4m  WC_μ=+2.966  WC_ρ=0.397
+             step (m):  p5=1  p25=3  p50=4  p75=7  p95=12
+             angle:    R̄=0.413  circ_mean=+2.934 rad  fwd(<π/4)=8.4%  side=44.1%  rev(>3π/4)=47.5%
+  State 6 :  30.0%  step_median≈   1095m  WC_μ=+0.104  WC_ρ=0.677
+             step (m):  p5=507  p25=786  p50=1124  p75=1684  p95=2814
+             angle:    R̄=0.676  circ_mean=+0.109 rad  fwd(<π/4)=70.1%  side=25.7%  rev(>3π/4)=4.2%
+  State 7 :   0.0%  step_median≈    438m  WC_μ=+0.124  WC_ρ=1.000
+  State 8 :  15.5%  step_median≈     26m  WC_μ=+0.070  WC_ρ=0.175
+             step (m):  p5=1  p25=4  p50=21  p75=61  p95=220
+             angle:    R̄=0.135  circ_mean=+0.060 rad  fwd(<π/4)=30.1%  side=51.6%  rev(>3π/4)=18.3%
+
+
+──────────────────────────────────────────────────────────────────────
+[alt1] GaussianEmission(z_log_step, turn_angle)
+──────────────────────────────────────────────────────────────────────
+K      LL            BIC           ICL           KL discrepancies per component
+K=1    -48224.0      96496.5       96496.5       [63.3031]  
+K=2    -42617.4      85360.6       91134.2       [53.5205  60.9655]  ← ICL
+K=3    -41113.4      82449.3       92423.2       [55.0019  51.1319  56.8221]  
+K=4    -40200.4      80739.5       95240.1       [47.8970  48.2973  51.4494  56.1064]  
+K=5    -39857.0      80188.2       95856.7       [47.5679  51.0876  51.0178  47.3787  57.8264]  
+K=6    -39458.7      79546.5       96645.8       [43.7575  47.6051  51.6183  45.2616  24.3383  60.6211]  
+K=7    -39206.5      79216.2       99828.4       [42.9790  50.6121  57.8691  40.3816  33.2506  37.9015  43.8475]  
+K=8    -38996.0      78988.8       100182.3      [42.5950  48.0770  53.9443  35.7159  48.3133  50.3427  39.1200  43.8180]  ← BIC ← ACDC
+
+State composition at K=1:
+  State 1 : 100.0%  step_median≈    266m  angle_mean=+0.058 rad  angle_sd=1.203
+             σ(z_step)=1.000  corr(z_step,angle)=-0.008
+             step (m):  p5=3  p25=140  p50=438  p75=969  p95=2430
+             angle:    R̄=0.521  circ_mean=+0.085 rad  fwd(<π/4)=59.2%  side=32.0%  rev(>3π/4)=8.8%
+
+State composition at K=2 [ICL]:
+  State 1 :  25.6%  step_median≈     30m  angle_mean=+0.010 rad  angle_sd=1.722
+             σ(z_step)=1.078  corr(z_step,angle)=-0.062
+             step (m):  p5=1  p25=4  p50=25  p75=96  p95=416
+             angle:    R̄=0.060  circ_mean=+0.175 rad  fwd(<π/4)=30.6%  side=44.1%  rev(>3π/4)=25.3%
+  State 2 :  74.4%  step_median≈    637m  angle_mean=+0.077 rad  angle_sd=0.917
+             σ(z_step)=0.469  corr(z_step,angle)=0.006
+             step (m):  p5=138  p25=332  p50=640  p75=1205  p95=2681
+             angle:    R̄=0.680  circ_mean=+0.082 rad  fwd(<π/4)=69.1%  side=27.8%  rev(>3π/4)=3.1%
+
+State composition at K=3:
+  State 1 :  17.9%  step_median≈     13m  angle_mean=+0.082 rad  angle_sd=1.757
+             σ(z_step)=0.956  corr(z_step,angle)=-0.020
+             step (m):  p5=1  p25=3  p50=8  p75=31  p95=97
+             angle:    R̄=0.047  circ_mean=+1.045 rad  fwd(<π/4)=28.0%  side=46.0%  rev(>3π/4)=26.0%
+  State 2 :  23.7%  step_median≈   1260m  angle_mean=+0.055 rad  angle_sd=0.420
+             σ(z_step)=0.332  corr(z_step,angle)=0.008
+             step (m):  p5=512  p25=867  p50=1355  p75=2117  p95=3576
+             angle:    R̄=0.925  circ_mean=+0.053 rad  fwd(<π/4)=94.2%  side=5.8%  rev(>3π/4)=0.0%
+  State 3 :  58.4%  step_median≈    400m  angle_mean=+0.051 rad  angle_sd=1.190
+             σ(z_step)=0.462  corr(z_step,angle)=0.021
+             step (m):  p5=87  p25=216  p50=401  p75=711  p95=1560
+             angle:    R̄=0.509  circ_mean=+0.085 rad  fwd(<π/4)=54.6%  side=38.3%  rev(>3π/4)=7.1%
+
+State composition at K=4:
+  State 1 :  24.9%  step_median≈    272m  angle_mean=+0.092 rad  angle_sd=0.617
+             σ(z_step)=0.414  corr(z_step,angle)=0.044
+             step (m):  p5=69  p25=164  p50=290  p75=472  p95=865
+             angle:    R̄=0.844  circ_mean=+0.093 rad  fwd(<π/4)=81.7%  side=18.3%  rev(>3π/4)=0.0%
+  State 2 :  33.1%  step_median≈    561m  angle_mean=+0.023 rad  angle_sd=1.387
+             σ(z_step)=0.421  corr(z_step,angle)=0.039
+             step (m):  p5=141  p25=320  p50=564  p75=949  p95=1903
+             angle:    R̄=0.302  circ_mean=+0.083 rad  fwd(<π/4)=37.9%  side=50.3%  rev(>3π/4)=11.8%
+  State 3 :  22.2%  step_median≈   1359m  angle_mean=+0.049 rad  angle_sd=0.399
+             σ(z_step)=0.314  corr(z_step,angle)=0.015
+             step (m):  p5=565  p25=924  p50=1415  p75=2167  p95=3608
+             angle:    R̄=0.931  circ_mean=+0.047 rad  fwd(<π/4)=95.3%  side=4.7%  rev(>3π/4)=0.0%
+  State 4 :  19.8%  step_median≈     15m  angle_mean=+0.086 rad  angle_sd=1.773
+             σ(z_step)=0.991  corr(z_step,angle)=-0.014
+             step (m):  p5=1  p25=3  p50=10  p75=45  p95=186
+             angle:    R̄=0.040  circ_mean=+0.973 rad  fwd(<π/4)=26.5%  side=48.8%  rev(>3π/4)=24.7%
+
+State composition at K=5:
+  State 1 :  32.7%  step_median≈    570m  angle_mean=+0.023 rad  angle_sd=1.391
+             σ(z_step)=0.417  corr(z_step,angle)=0.033
+             step (m):  p5=147  p25=328  p50=574  p75=959  p95=1908
+             angle:    R̄=0.298  circ_mean=+0.083 rad  fwd(<π/4)=37.5%  side=50.6%  rev(>3π/4)=11.9%
+  State 2 :  16.9%  step_median≈     21m  angle_mean=-0.287 rad  angle_sd=1.600
+             σ(z_step)=1.036  corr(z_step,angle)=0.176
+             step (m):  p5=1  p25=4  p50=19  p75=62  p95=219
+             angle:    R̄=0.187  circ_mean=-0.504 rad  fwd(<π/4)=32.4%  side=49.7%  rev(>3π/4)=17.9%
+  State 3 :  21.7%  step_median≈   1377m  angle_mean=+0.050 rad  angle_sd=0.399
+             σ(z_step)=0.311  corr(z_step,angle)=0.015
+             step (m):  p5=572  p25=942  p50=1433  p75=2189  p95=3623
+             angle:    R̄=0.931  circ_mean=+0.049 rad  fwd(<π/4)=95.2%  side=4.8%  rev(>3π/4)=0.0%
+  State 4 :  25.3%  step_median≈    281m  angle_mean=+0.097 rad  angle_sd=0.603
+             σ(z_step)=0.407  corr(z_step,angle)=0.026
+             step (m):  p5=73  p25=170  p50=294  p75=479  p95=873
+             angle:    R̄=0.850  circ_mean=+0.096 rad  fwd(<π/4)=82.4%  side=17.6%  rev(>3π/4)=0.0%
+  State 5 :   3.4%  step_median≈      4m  angle_mean=+2.294 rad  angle_sd=0.594
+             σ(z_step)=0.368  corr(z_step,angle)=0.183
+             step (m):  p5=1  p25=2  p50=4  p75=6  p95=11
+             angle:    R̄=0.863  circ_mean=+2.357 rad  fwd(<π/4)=0.0%  side=45.0%  rev(>3π/4)=55.0%
+
+State composition at K=6:
+  State 1 :  23.4%  step_median≈    441m  angle_mean=+0.093 rad  angle_sd=0.456
+             σ(z_step)=0.329  corr(z_step,angle)=-0.028
+             step (m):  p5=169  p25=294  p50=457  p75=678  p95=1145
+             angle:    R̄=0.915  circ_mean=+0.099 rad  fwd(<π/4)=93.1%  side=6.9%  rev(>3π/4)=0.0%
+  State 2 :  21.3%  step_median≈    137m  angle_mean=-0.051 rad  angle_sd=1.272
+             σ(z_step)=0.493  corr(z_step,angle)=-0.024
+             step (m):  p5=26  p25=66  p50=121  p75=215  p95=443
+             angle:    R̄=0.414  circ_mean=-0.024 rad  fwd(<π/4)=44.9%  side=47.1%  rev(>3π/4)=8.0%
+  State 3 :  15.6%  step_median≈   1705m  angle_mean=+0.049 rad  angle_sd=0.394
+             σ(z_step)=0.264  corr(z_step,angle)=0.008
+             step (m):  p5=819  p25=1238  p50=1782  p75=2502  p95=3900
+             angle:    R̄=0.930  circ_mean=+0.048 rad  fwd(<π/4)=95.0%  side=5.0%  rev(>3π/4)=0.0%
+  State 4 :  27.2%  step_median≈    716m  angle_mean=+0.042 rad  angle_sd=1.360
+             σ(z_step)=0.360  corr(z_step,angle)=0.034
+             step (m):  p5=228  p25=452  p50=716  p75=1114  p95=2078
+             angle:    R̄=0.324  circ_mean=+0.138 rad  fwd(<π/4)=38.3%  side=50.6%  rev(>3π/4)=11.1%
+  State 5 :   0.9%  step_median≈     12m  angle_mean=+2.295 rad  angle_sd=0.758
+             σ(z_step)=1.758  corr(z_step,angle)=0.547
+             step (m):  p5=0  p25=2  p50=28  p75=115  p95=1355
+             angle:    R̄=0.803  circ_mean=+2.512 rad  fwd(<π/4)=4.0%  side=31.1%  rev(>3π/4)=64.9%
+  State 6 :  11.5%  step_median≈      4m  angle_mean=-0.103 rad  angle_sd=1.862
+             σ(z_step)=0.462  corr(z_step,angle)=-0.003
+             step (m):  p5=1  p25=2  p50=4  p75=8  p95=16
+             angle:    R̄=0.073  circ_mean=+2.941 rad  fwd(<π/4)=22.5%  side=47.3%  rev(>3π/4)=30.3%
+
+State composition at K=7:
+  State 1 :  22.5%  step_median≈    493m  angle_mean=+0.082 rad  angle_sd=0.438
+             σ(z_step)=0.303  corr(z_step,angle)=-0.025
+             step (m):  p5=204  p25=343  p50=504  p75=734  p95=1203
+             angle:    R̄=0.915  circ_mean=+0.077 rad  fwd(<π/4)=93.4%  side=6.6%  rev(>3π/4)=0.0%
+  State 2 :  13.5%  step_median≈   1840m  angle_mean=+0.045 rad  angle_sd=0.369
+             σ(z_step)=0.249  corr(z_step,angle)=0.013
+             step (m):  p5=929  p25=1364  p50=1895  p75=2616  p95=4029
+             angle:    R̄=0.938  circ_mean=+0.040 rad  fwd(<π/4)=96.4%  side=3.6%  rev(>3π/4)=0.0%
+  State 3 :  11.4%  step_median≈      5m  angle_mean=-0.291 rad  angle_sd=1.778
+             σ(z_step)=0.519  corr(z_step,angle)=-0.020
+             step (m):  p5=1  p25=3  p50=4  p75=9  p95=24
+             angle:    R̄=0.041  circ_mean=-1.390 rad  fwd(<π/4)=25.3%  side=49.0%  rev(>3π/4)=25.7%
+  State 4 :  20.6%  step_median≈    921m  angle_mean=+0.140 rad  angle_sd=1.264
+             σ(z_step)=0.306  corr(z_step,angle)=-0.001
+             step (m):  p5=402  p25=638  p50=913  p75=1327  p95=2313
+             angle:    R̄=0.395  circ_mean=+0.234 rad  fwd(<π/4)=41.2%  side=50.6%  rev(>3π/4)=8.2%
+  State 5 :   2.2%  step_median≈     10m  angle_mean=+2.320 rad  angle_sd=0.692
+             σ(z_step)=1.496  corr(z_step,angle)=0.475
+             step (m):  p5=0  p25=3  p50=10  p75=42  p95=567
+             angle:    R̄=0.873  circ_mean=+2.518 rad  fwd(<π/4)=1.7%  side=30.5%  rev(>3π/4)=67.7%
+  State 6 :  14.3%  step_median≈    252m  angle_mean=-0.184 rad  angle_sd=1.502
+             σ(z_step)=0.472  corr(z_step,angle)=-0.053
+             step (m):  p5=49  p25=126  p50=228  p75=371  p95=749
+             angle:    R̄=0.177  circ_mean=-0.455 rad  fwd(<π/4)=31.4%  side=50.5%  rev(>3π/4)=18.0%
+  State 7 :  15.6%  step_median≈    143m  angle_mean=+0.063 rad  angle_sd=0.905
+             σ(z_step)=0.462  corr(z_step,angle)=0.020
+             step (m):  p5=32  p25=79  p50=146  p75=241  p95=522
+             angle:    R̄=0.648  circ_mean=+0.090 rad  fwd(<π/4)=59.9%  side=39.2%  rev(>3π/4)=0.9%
+
+State composition at K=8 [BIC] [ACDC]:
+  State 1 :  22.1%  step_median≈    495m  angle_mean=+0.078 rad  angle_sd=0.431
+             σ(z_step)=0.301  corr(z_step,angle)=-0.014
+             step (m):  p5=206  p25=347  p50=508  p75=739  p95=1207
+             angle:    R̄=0.918  circ_mean=+0.075 rad  fwd(<π/4)=94.0%  side=6.0%  rev(>3π/4)=0.0%
+  State 2 :   2.6%  step_median≈     14m  angle_mean=+2.644 rad  angle_sd=0.315
+             σ(z_step)=1.229  corr(z_step,angle)=0.068
+             step (m):  p5=1  p25=3  p50=8  p75=39  p95=583
+             angle:    R̄=0.962  circ_mean=+2.691 rad  fwd(<π/4)=0.0%  side=13.0%  rev(>3π/4)=87.0%
+  State 3 :   8.7%  step_median≈      5m  angle_mean=+0.173 rad  angle_sd=1.528
+             σ(z_step)=0.518  corr(z_step,angle)=-0.024
+             step (m):  p5=1  p25=2  p50=4  p75=9  p95=22
+             angle:    R̄=0.288  circ_mean=+0.270 rad  fwd(<π/4)=33.0%  side=60.2%  rev(>3π/4)=6.8%
+  State 4 :  15.9%  step_median≈    298m  angle_mean=-0.054 rad  angle_sd=1.424
+             σ(z_step)=0.440  corr(z_step,angle)=-0.053
+             step (m):  p5=63  p25=161  p50=271  p75=430  p95=806
+             angle:    R̄=0.239  circ_mean=-0.129 rad  fwd(<π/4)=34.0%  side=52.6%  rev(>3π/4)=13.5%
+  State 5 :   2.9%  step_median≈     12m  angle_mean=-2.540 rad  angle_sd=0.432
+             σ(z_step)=1.323  corr(z_step,angle)=-0.376
+             step (m):  p5=1  p25=3  p50=8  p75=36  p95=536
+             angle:    R̄=0.935  circ_mean=-2.622 rad  fwd(<π/4)=0.7%  side=22.8%  rev(>3π/4)=76.6%
+  State 6 :  13.3%  step_median≈   1846m  angle_mean=+0.044 rad  angle_sd=0.363
+             σ(z_step)=0.249  corr(z_step,angle)=0.013
+             step (m):  p5=932  p25=1380  p50=1916  p75=2623  p95=4032
+             angle:    R̄=0.940  circ_mean=+0.041 rad  fwd(<π/4)=97.0%  side=3.0%  rev(>3π/4)=0.0%
+  State 7 :  19.0%  step_median≈    973m  angle_mean=+0.135 rad  angle_sd=1.245
+             σ(z_step)=0.296  corr(z_step,angle)=0.012
+             step (m):  p5=445  p25=684  p50=966  p75=1369  p95=2362
+             angle:    R̄=0.411  circ_mean=+0.221 rad  fwd(<π/4)=42.0%  side=50.0%  rev(>3π/4)=8.0%
+  State 8 :  15.6%  step_median≈    135m  angle_mean=+0.068 rad  angle_sd=0.923
+             σ(z_step)=0.472  corr(z_step,angle)=0.004
+             step (m):  p5=30  p25=73  p50=134  p75=230  p95=503
+             angle:    R̄=0.645  circ_mean=+0.075 rad  fwd(<π/4)=60.0%  side=39.4%  rev(>3π/4)=0.6%
+
+
+──────────────────────────────────────────────────────────────────────
+[alt2] StepAngleCardEmission (Gaussian log-step + Cardioid angle)
+──────────────────────────────────────────────────────────────────────
+K      LL            BIC           ICL           KL discrepancies per component
+K=1    -49878.2      99795.1       99795.1       [63.5333]  
+K=2    -42956.2      86018.9       91362.2       [53.8044  61.2008]  ← ICL
+K=3    -41735.6      83664.7       94671.3       [54.2591  53.5489  54.7782]  
+K=4    -41321.6      82943.2       97915.1       [50.8199  54.1247  50.8250  45.8609]  
+K=5    -40809.7      82045.1       96441.1       [51.3583  47.7784  38.1229  60.2083  52.5069]  
+K=6    -40580.1      81731.2       98756.0       [51.1595  46.6436  40.0305  41.6156  50.4704  54.1227]  ← ACDC
+K=7    -40387.6      81510.6       100041.9      [41.9903  43.9446  62.2342  42.4624  39.9339  48.0375  46.4284]  
+K=8    -40239.1      81397.6       102983.4      [37.6999  40.5787  43.9021  42.8374  57.4128  47.6661  40.1508  39.4304]  ← BIC
+
+State composition at K=1:
+  State 1 : 100.0%  step_median≈    266m  Card_μ=+0.085  Card_ρ=0.500
+             step (m):  p5=3  p25=140  p50=438  p75=969  p95=2430
+             angle:    R̄=0.521  circ_mean=+0.085 rad  fwd(<π/4)=59.2%  side=32.0%  rev(>3π/4)=8.8%
+
+State composition at K=2 [ICL]:
+  State 1 :  24.0%  step_median≈     26m  Card_μ=+0.245  Card_ρ=0.094
+             step (m):  p5=1  p25=4  p50=20  p75=83  p95=412
+             angle:    R̄=0.048  circ_mean=+0.530 rad  fwd(<π/4)=30.4%  side=42.5%  rev(>3π/4)=27.1%
+  State 2 :  76.0%  step_median≈    620m  Card_μ=+0.077  Card_ρ=0.500
+             step (m):  p5=128  p25=319  p50=626  p75=1188  p95=2664
+             angle:    R̄=0.672  circ_mean=+0.075 rad  fwd(<π/4)=68.4%  side=28.6%  rev(>3π/4)=3.0%
+
+State composition at K=3:
+  State 1 :  19.4%  step_median≈     17m  Card_μ=+1.933  Card_ρ=0.028
+             step (m):  p5=1  p25=3  p50=9  p75=42  p95=374
+             angle:    R̄=0.084  circ_mean=+2.787 rad  fwd(<π/4)=24.4%  side=43.3%  rev(>3π/4)=32.4%
+  State 2 :  45.1%  step_median≈    315m  Card_μ=+0.064  Card_ρ=0.500
+             step (m):  p5=78  p25=181  p50=316  p75=512  p95=1002
+             angle:    R̄=0.649  circ_mean=+0.063 rad  fwd(<π/4)=65.1%  side=32.1%  rev(>3π/4)=2.7%
+  State 3 :  35.5%  step_median≈   1175m  Card_μ=+0.084  Card_ρ=0.500
+             step (m):  p5=466  p25=782  p50=1189  p75=1885  p95=3318
+             angle:    R̄=0.685  circ_mean=+0.082 rad  fwd(<π/4)=70.8%  side=25.6%  rev(>3π/4)=3.6%
+
+State composition at K=4:
+  State 1 :  16.1%  step_median≈   1771m  Card_μ=+0.071  Card_ρ=0.500
+             step (m):  p5=908  p25=1360  p50=1847  p75=2552  p95=3944
+             angle:    R̄=0.755  circ_mean=+0.070 rad  fwd(<π/4)=77.7%  side=19.7%  rev(>3π/4)=2.5%
+  State 2 :  18.8%  step_median≈     16m  Card_μ=+2.692  Card_ρ=0.062
+             step (m):  p5=1  p25=3  p50=9  p75=42  p95=423
+             angle:    R̄=0.116  circ_mean=+2.878 rad  fwd(<π/4)=22.7%  side=43.2%  rev(>3π/4)=34.1%
+  State 3 :  41.4%  step_median≈    623m  Card_μ=+0.088  Card_ρ=0.500
+             step (m):  p5=229  p25=423  p50=632  p75=931  p95=1626
+             angle:    R̄=0.638  circ_mean=+0.084 rad  fwd(<π/4)=65.7%  side=30.5%  rev(>3π/4)=3.8%
+  State 4 :  23.7%  step_median≈    204m  Card_μ=+0.052  Card_ρ=0.500
+             step (m):  p5=50  p25=108  p50=190  p75=298  p95=599
+             angle:    R̄=0.660  circ_mean=+0.050 rad  fwd(<π/4)=64.5%  side=33.9%  rev(>3π/4)=1.7%
+
+State composition at K=5:
+  State 1 :  18.2%  step_median≈   1684m  Card_μ=+0.075  Card_ρ=0.500
+             step (m):  p5=846  p25=1264  p50=1768  p75=2470  p95=3828
+             angle:    R̄=0.755  circ_mean=+0.074 rad  fwd(<π/4)=77.2%  side=20.5%  rev(>3π/4)=2.3%
+  State 2 :  22.0%  step_median≈    149m  Card_μ=+0.056  Card_ρ=0.500
+             step (m):  p5=27  p25=74  p50=135  p75=229  p95=473
+             angle:    R̄=0.627  circ_mean=+0.055 rad  fwd(<π/4)=61.4%  side=36.7%  rev(>3π/4)=1.8%
+  State 3 :   5.0%  step_median≈     76m  Card_μ=-3.058  Card_ρ=0.500
+             step (m):  p5=1  p25=34  p50=148  p75=455  p95=1572
+             angle:    R̄=0.719  circ_mean=-3.071 rad  fwd(<π/4)=1.1%  side=29.8%  rev(>3π/4)=69.1%
+  State 4 :  10.9%  step_median≈      4m  Card_μ=+2.356  Card_ρ=0.066
+             step (m):  p5=1  p25=2  p50=4  p75=7  p95=16
+             angle:    R̄=0.075  circ_mean=+2.610 rad  fwd(<π/4)=22.9%  side=47.1%  rev(>3π/4)=30.0%
+  State 5 :  43.9%  step_median≈    562m  Card_μ=+0.086  Card_ρ=0.500
+             step (m):  p5=205  p25=369  p50=566  p75=846  p95=1458
+             angle:    R̄=0.657  circ_mean=+0.086 rad  fwd(<π/4)=66.4%  side=30.8%  rev(>3π/4)=2.8%
+
+State composition at K=6 [ACDC]:
+  State 1 :  40.9%  step_median≈    638m  Card_μ=+0.088  Card_ρ=0.500
+             step (m):  p5=246  p25=437  p50=645  p75=943  p95=1650
+             angle:    R̄=0.656  circ_mean=+0.089 rad  fwd(<π/4)=66.5%  side=30.6%  rev(>3π/4)=2.9%
+  State 2 :  24.7%  step_median≈    206m  Card_μ=+0.061  Card_ρ=0.500
+             step (m):  p5=55  p25=111  p50=189  p75=292  p95=553
+             angle:    R̄=0.651  circ_mean=+0.056 rad  fwd(<π/4)=63.7%  side=34.4%  rev(>3π/4)=1.9%
+  State 3 :   5.8%  step_median≈     63m  Card_μ=-3.051  Card_ρ=0.500
+             step (m):  p5=1  p25=20  p50=105  p75=398  p95=1491
+             angle:    R̄=0.708  circ_mean=-3.049 rad  fwd(<π/4)=0.6%  side=33.1%  rev(>3π/4)=66.2%
+  State 4 :   7.1%  step_median≈     15m  Card_μ=+0.057  Card_ρ=0.500
+             step (m):  p5=1  p25=4  p50=11  p75=26  p95=52
+             angle:    R̄=0.559  circ_mean=+0.041 rad  fwd(<π/4)=51.9%  side=46.5%  rev(>3π/4)=1.6%
+  State 5 :  15.6%  step_median≈   1797m  Card_μ=+0.071  Card_ρ=0.500
+             step (m):  p5=952  p25=1381  p50=1882  p75=2585  p95=3973
+             angle:    R̄=0.764  circ_mean=+0.067 rad  fwd(<π/4)=78.4%  side=19.4%  rev(>3π/4)=2.3%
+  State 6 :   6.0%  step_median≈      4m  Card_μ=+2.943  Card_ρ=0.393
+             step (m):  p5=1  p25=2  p50=4  p75=6  p95=11
+             angle:    R̄=0.440  circ_mean=+2.932 rad  fwd(<π/4)=6.8%  side=46.0%  rev(>3π/4)=47.2%
+
+State composition at K=7:
+  State 1 :  13.9%  step_median≈    104m  Card_μ=+0.052  Card_ρ=0.500
+             step (m):  p5=21  p25=47  p50=85  p75=138  p95=257
+             angle:    R̄=0.618  circ_mean=+0.042 rad  fwd(<π/4)=60.1%  side=38.5%  rev(>3π/4)=1.4%
+  State 2 :   0.1%  step_median≈      0m  Card_μ=+1.279  Card_ρ=0.167
+             step (m):  p5=0  p25=0  p50=0  p75=271  p95=11207
+             angle:    R̄=0.213  circ_mean=+1.612 rad  fwd(<π/4)=33.3%  side=33.3%  rev(>3π/4)=33.3%
+  State 3 :  11.6%  step_median≈      4m  Card_μ=+2.858  Card_ρ=0.124
+             step (m):  p5=1  p25=2  p50=4  p75=7  p95=17
+             angle:    R̄=0.126  circ_mean=+2.877 rad  fwd(<π/4)=20.4%  side=47.2%  rev(>3π/4)=32.4%
+  State 4 :  29.3%  step_median≈    362m  Card_μ=+0.077  Card_ρ=0.500
+             step (m):  p5=143  p25=236  p50=343  p75=491  p95=823
+             angle:    R̄=0.689  circ_mean=+0.081 rad  fwd(<π/4)=67.2%  side=31.4%  rev(>3π/4)=1.3%
+  State 5 :   5.0%  step_median≈    270m  Card_μ=-3.046  Card_ρ=0.500
+             step (m):  p5=41  p25=118  p50=279  p75=560  p95=1462
+             angle:    R̄=0.722  circ_mean=-3.080 rad  fwd(<π/4)=0.2%  side=32.5%  rev(>3π/4)=67.2%
+  State 6 :  10.0%  step_median≈   2123m  Card_μ=+0.065  Card_ρ=0.500
+             step (m):  p5=1228  p25=1746  p50=2253  p75=2943  p95=4347
+             angle:    R̄=0.792  circ_mean=+0.054 rad  fwd(<π/4)=81.2%  side=16.6%  rev(>3π/4)=2.2%
+  State 7 :  30.1%  step_median≈    895m  Card_μ=+0.091  Card_ρ=0.500
+             step (m):  p5=433  p25=664  p50=921  p75=1278  p95=2078
+             angle:    R̄=0.679  circ_mean=+0.089 rad  fwd(<π/4)=68.7%  side=28.6%  rev(>3π/4)=2.8%
+
+State composition at K=8 [BIC]:
+  State 1 :  13.9%  step_median≈    163m  Card_μ=+0.053  Card_ρ=0.500
+             step (m):  p5=45  p25=86  p50=146  p75=233  p95=482
+             angle:    R̄=0.665  circ_mean=+0.053 rad  fwd(<π/4)=64.7%  side=34.3%  rev(>3π/4)=1.1%
+  State 2 :  27.0%  step_median≈    379m  Card_μ=+0.078  Card_ρ=0.500
+             step (m):  p5=129  p25=244  p50=352  p75=499  p95=802
+             angle:    R̄=0.675  circ_mean=+0.082 rad  fwd(<π/4)=65.9%  side=32.6%  rev(>3π/4)=1.4%
+  State 3 :  28.5%  step_median≈    915m  Card_μ=+0.092  Card_ρ=0.500
+             step (m):  p5=473  p25=691  p50=941  p75=1279  p95=2036
+             angle:    R̄=0.678  circ_mean=+0.092 rad  fwd(<π/4)=68.7%  side=28.4%  rev(>3π/4)=2.8%
+  State 4 :   5.3%  step_median≈    237m  Card_μ=-3.049  Card_ρ=0.500
+             step (m):  p5=34  p25=88  p50=237  p75=531  p95=1449
+             angle:    R̄=0.707  circ_mean=-3.052 rad  fwd(<π/4)=0.5%  side=33.0%  rev(>3π/4)=66.5%
+  State 5 :   7.7%  step_median≈      4m  Card_μ=+2.999  Card_ρ=0.403
+             step (m):  p5=1  p25=2  p50=4  p75=7  p95=14
+             angle:    R̄=0.437  circ_mean=+2.993 rad  fwd(<π/4)=6.6%  side=46.9%  rev(>3π/4)=46.5%
+  State 6 :  10.5%  step_median≈   2112m  Card_μ=+0.065  Card_ρ=0.500
+             step (m):  p5=1198  p25=1720  p50=2241  p75=2917  p95=4317
+             angle:    R̄=0.791  circ_mean=+0.052 rad  fwd(<π/4)=81.3%  side=16.5%  rev(>3π/4)=2.3%
+  State 7 :   0.1%  step_median≈      0m  Card_μ=+2.947  Card_ρ=0.331
+             step (m):  p5=0  p25=0  p50=0  p75=23  p95=10136
+             angle:    R̄=0.405  circ_mean=+3.027 rad  fwd(<π/4)=15.8%  side=31.6%  rev(>3π/4)=52.6%
+  State 8 :   7.0%  step_median≈     17m  Card_μ=+0.035  Card_ρ=0.500
+             step (m):  p5=1  p25=4  p50=13  p75=29  p95=65
+             angle:    R̄=0.580  circ_mean=+0.012 rad  fwd(<π/4)=53.9%  side=45.1%  rev(>3π/4)=1.1%
+
+
+======================================================================

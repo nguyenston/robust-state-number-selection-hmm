@@ -1,0 +1,3 @@
+[submodule "StateSpaceDynamics.jl"]
+	path = StateSpaceDynamics.jl
+	url = git@github.com:nguyenston/StateSpaceDynamics.jl.git

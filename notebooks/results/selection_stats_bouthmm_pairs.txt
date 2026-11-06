@@ -1,0 +1,1179 @@
+======================================================================
+DOG MULTI BOUT-HMM — BEHAVIOR PAIR STATISTICS
+Generated: 2026-10-31T15:50:27.276
+======================================================================
+
+  Pairs: ordered combinations of two behaviors co-occurring
+  within the same window (or one behavior + (pure) marker for
+  windows where exactly one behavior is annotated).
+  Filter: only pairs with > 50 windows shown.
+
+══════════════════════════════════════════════════════════════════════
+[BIC-best] fits — pair statistics at K=[4, 5, 7, 13, 14]
+══════════════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────────────────────────
+K=4   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       94.4%  Walking (pure)                            (4342 windows total)
+       88.9%  Eating + Standing                         (605 windows total)
+       85.4%  Eating + Sitting                          (481 windows total)
+       84.5%  Eating + Lying chest                      (297 windows total)
+       79.8%  Walking + Eating                          (228 windows total)
+       46.1%  Tugging + Playing                         (1867 windows total)
+       33.9%  Standing (pure)                           (2093 windows total)
+       33.4%  Lying chest (pure)                        (2238 windows total)
+       21.1%  Sitting (pure)                            (1842 windows total)
+       18.6%  Playing (pure)                            (2617 windows total)
+       16.9%  Sitting + Panting                         (4449 windows total)
+        9.7%  Lying chest + Panting                     (5138 windows total)
+        7.5%  Standing + Panting                        (3969 windows total)
+        5.6%  Synchronization (pure)                    (72 windows total)
+
+    Aligned cluster 2:
+       92.2%  Standing + Panting                        (3969 windows total)
+       90.3%  Lying chest + Panting                     (5138 windows total)
+       83.0%  Sitting + Panting                         (4449 windows total)
+       74.0%  Sitting (pure)                            (1842 windows total)
+       66.4%  Lying chest (pure)                        (2238 windows total)
+       62.6%  Standing (pure)                           (2093 windows total)
+       13.1%  Eating + Lying chest                      (297 windows total)
+       10.2%  Eating + Sitting                          (481 windows total)
+        9.9%  Eating + Standing                         (605 windows total)
+        6.2%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 3:
+      100.0%  Shaking (pure)                            (293 windows total)
+      100.0%  Eating + Trotting                         (153 windows total)
+      100.0%  Galloping + Playing                       (1304 windows total)
+      100.0%  Galloping + Carrying object               (888 windows total)
+       99.2%  Trotting (pure)                           (4141 windows total)
+       98.8%  Pacing (pure)                             (734 windows total)
+       97.1%  Jumping + Playing                         (138 windows total)
+       96.6%  Playing + Carrying object                 (1125 windows total)
+       94.4%  Synchronization (pure)                    (72 windows total)
+       94.2%  Trotting + Playing                        (224 windows total)
+       93.9%  Trotting + Carrying object                (212 windows total)
+       76.1%  Playing (pure)                            (2617 windows total)
+       46.5%  Tugging + Playing                         (1867 windows total)
+       20.2%  Walking + Eating                          (228 windows total)
+        5.6%  Walking (pure)                            (4342 windows total)
+
+    Aligned cluster 4:
+       98.7%  Sniffing (pure)                           (7006 windows total)
+       95.4%  Drinking (pure)                           (241 windows total)
+        5.2%  Trotting + Carrying object                (212 windows total)
+
+    Aligned cluster 5:
+      (none above 5%)
+
+    Aligned cluster 6:
+      (none above 5%)
+
+    Aligned cluster 7:
+      (none above 5%)
+
+    Aligned cluster 8:
+      (none above 5%)
+
+    Aligned cluster 9:
+      (none above 5%)
+
+    Aligned cluster 10:
+      (none above 5%)
+
+    Aligned cluster 11:
+      (none above 5%)
+
+    Aligned cluster 12:
+      (none above 5%)
+
+    Aligned cluster 13:
+      (none above 5%)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 4  ( 98.7%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 2  ( 90.3%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 2  ( 83.0%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 94.4%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 3  ( 99.2%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 2  ( 92.2%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 3  ( 76.1%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 2  ( 66.4%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 62.6%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 3  ( 46.5%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 2  ( 74.0%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 3  (100.0%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 3  ( 96.6%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 3  (100.0%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 3  ( 98.8%)
+
+──────────────────────────────────────────────────────────────────────
+K=5   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       91.7%  Eating + Standing                         (605 windows total)
+       85.9%  Eating + Sitting                          (481 windows total)
+       84.5%  Eating + Lying chest                      (297 windows total)
+       67.8%  Walking (pure)                            (4342 windows total)
+       50.9%  Walking + Eating                          (228 windows total)
+       39.0%  Standing (pure)                           (2093 windows total)
+       33.1%  Lying chest (pure)                        (2238 windows total)
+       29.1%  Tugging + Playing                         (1867 windows total)
+       23.6%  Sitting (pure)                            (1842 windows total)
+       21.5%  Sitting + Panting                         (4449 windows total)
+       16.6%  Drinking (pure)                           (241 windows total)
+       11.1%  Playing (pure)                            (2617 windows total)
+       10.9%  Lying chest + Panting                     (5138 windows total)
+        8.6%  Standing + Panting                        (3969 windows total)
+
+    Aligned cluster 2:
+       90.6%  Standing + Panting                        (3969 windows total)
+       88.7%  Lying chest + Panting                     (5138 windows total)
+       77.5%  Sitting + Panting                         (4449 windows total)
+       70.4%  Sitting (pure)                            (1842 windows total)
+       64.3%  Lying chest (pure)                        (2238 windows total)
+       57.0%  Standing (pure)                           (2093 windows total)
+        8.1%  Eating + Lying chest                      (297 windows total)
+        6.3%  Eating + Standing                         (605 windows total)
+        5.2%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 3:
+       99.3%  Trotting (pure)                           (4141 windows total)
+       98.2%  Trotting + Playing                        (224 windows total)
+       98.1%  Trotting + Carrying object                (212 windows total)
+       98.1%  Pacing (pure)                             (734 windows total)
+       98.0%  Eating + Trotting                         (153 windows total)
+       54.4%  Tugging + Playing                         (1867 windows total)
+       48.2%  Walking + Eating                          (228 windows total)
+       44.5%  Playing (pure)                            (2617 windows total)
+       38.1%  Playing + Carrying object                 (1125 windows total)
+       32.2%  Walking (pure)                            (4342 windows total)
+       30.6%  Synchronization (pure)                    (72 windows total)
+       24.9%  Galloping + Carrying object               (888 windows total)
+       24.6%  Jumping + Playing                         (138 windows total)
+       17.5%  Galloping + Playing                       (1304 windows total)
+        8.7%  Eating + Sitting                          (481 windows total)
+
+    Aligned cluster 4:
+       99.1%  Sniffing (pure)                           (7006 windows total)
+       83.4%  Drinking (pure)                           (241 windows total)
+
+    Aligned cluster 5:
+       97.3%  Shaking (pure)                            (293 windows total)
+       82.5%  Galloping + Playing                       (1304 windows total)
+       75.4%  Jumping + Playing                         (138 windows total)
+       75.1%  Galloping + Carrying object               (888 windows total)
+       66.7%  Synchronization (pure)                    (72 windows total)
+       59.6%  Playing + Carrying object                 (1125 windows total)
+       40.6%  Playing (pure)                            (2617 windows total)
+       10.6%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 6:
+      (none above 5%)
+
+    Aligned cluster 7:
+      (none above 5%)
+
+    Aligned cluster 8:
+      (none above 5%)
+
+    Aligned cluster 9:
+      (none above 5%)
+
+    Aligned cluster 10:
+      (none above 5%)
+
+    Aligned cluster 11:
+      (none above 5%)
+
+    Aligned cluster 12:
+      (none above 5%)
+
+    Aligned cluster 13:
+      (none above 5%)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 4  ( 99.1%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 2  ( 88.7%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 2  ( 77.5%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 67.8%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 3  ( 99.3%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 2  ( 90.6%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 3  ( 44.5%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 2  ( 64.3%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 57.0%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 3  ( 54.4%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 2  ( 70.4%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 5  ( 82.5%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 5  ( 59.6%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 5  ( 75.1%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 3  ( 98.1%)
+
+──────────────────────────────────────────────────────────────────────
+K=7   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       96.0%  Walking (pure)                            (4342 windows total)
+       80.3%  Walking + Eating                          (228 windows total)
+       39.7%  Eating + Lying chest                      (297 windows total)
+       39.2%  Tugging + Playing                         (1867 windows total)
+       35.7%  Eating + Standing                         (605 windows total)
+       27.0%  Eating + Sitting                          (481 windows total)
+       16.2%  Drinking (pure)                           (241 windows total)
+       15.7%  Lying chest (pure)                        (2238 windows total)
+       15.2%  Playing (pure)                            (2617 windows total)
+        7.4%  Sitting (pure)                            (1842 windows total)
+        6.7%  Standing (pure)                           (2093 windows total)
+        5.6%  Synchronization (pure)                    (72 windows total)
+
+    Aligned cluster 2:
+       66.9%  Eating + Sitting                          (481 windows total)
+       59.2%  Eating + Standing                         (605 windows total)
+       55.9%  Eating + Lying chest                      (297 windows total)
+       42.6%  Standing (pure)                           (2093 windows total)
+       34.4%  Sitting + Panting                         (4449 windows total)
+       27.7%  Lying chest (pure)                        (2238 windows total)
+       25.9%  Sitting (pure)                            (1842 windows total)
+       14.8%  Lying chest + Panting                     (5138 windows total)
+       11.4%  Tugging + Playing                         (1867 windows total)
+       10.3%  Standing + Panting                        (3969 windows total)
+        5.0%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 3:
+      100.0%  Eating + Trotting                         (153 windows total)
+       99.5%  Trotting (pure)                           (4141 windows total)
+       98.8%  Pacing (pure)                             (734 windows total)
+       97.3%  Trotting + Playing                        (224 windows total)
+       97.2%  Trotting + Carrying object                (212 windows total)
+       57.2%  Playing + Carrying object                 (1125 windows total)
+       49.3%  Galloping + Carrying object               (888 windows total)
+       42.5%  Playing (pure)                            (2617 windows total)
+       39.8%  Tugging + Playing                         (1867 windows total)
+       34.4%  Galloping + Playing                       (1304 windows total)
+       29.2%  Synchronization (pure)                    (72 windows total)
+       26.1%  Jumping + Playing                         (138 windows total)
+       17.5%  Walking + Eating                          (228 windows total)
+
+    Aligned cluster 4:
+       99.0%  Sniffing (pure)                           (7006 windows total)
+       83.8%  Drinking (pure)                           (241 windows total)
+
+    Aligned cluster 5:
+       96.6%  Shaking (pure)                            (293 windows total)
+       70.3%  Jumping + Playing                         (138 windows total)
+       65.6%  Galloping + Playing                       (1304 windows total)
+       65.3%  Synchronization (pure)                    (72 windows total)
+       50.7%  Galloping + Carrying object               (888 windows total)
+       40.0%  Playing + Carrying object                 (1125 windows total)
+       35.0%  Playing (pure)                            (2617 windows total)
+        7.1%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 6:
+       62.6%  Sitting (pure)                            (1842 windows total)
+       59.1%  Sitting + Panting                         (4449 windows total)
+       46.8%  Lying chest (pure)                        (2238 windows total)
+       31.2%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 7:
+       86.6%  Standing + Panting                        (3969 windows total)
+       78.3%  Lying chest + Panting                     (5138 windows total)
+       16.1%  Standing (pure)                           (2093 windows total)
+        9.7%  Lying chest (pure)                        (2238 windows total)
+
+    Aligned cluster 8:
+      (none above 5%)
+
+    Aligned cluster 9:
+      (none above 5%)
+
+    Aligned cluster 10:
+      (none above 5%)
+
+    Aligned cluster 11:
+      (none above 5%)
+
+    Aligned cluster 12:
+      (none above 5%)
+
+    Aligned cluster 13:
+      (none above 5%)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 4  ( 99.0%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 7  ( 78.3%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 6  ( 59.1%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 96.0%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 3  ( 99.5%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 7  ( 86.6%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 3  ( 42.5%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 6  ( 46.8%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 42.6%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 3  ( 39.8%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 6  ( 62.6%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 5  ( 65.6%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 3  ( 57.2%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 5  ( 50.7%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 3  ( 98.8%)
+
+──────────────────────────────────────────────────────────────────────
+K=13   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       55.8%  Walking (pure)                            (4342 windows total)
+       39.9%  Walking + Eating                          (228 windows total)
+       19.8%  Tugging + Playing                         (1867 windows total)
+       16.5%  Eating + Lying chest                      (297 windows total)
+       14.4%  Eating + Standing                         (605 windows total)
+       13.5%  Eating + Sitting                          (481 windows total)
+        8.4%  Lying chest (pure)                        (2238 windows total)
+        7.0%  Playing (pure)                            (2617 windows total)
+        6.2%  Sitting + Panting                         (4449 windows total)
+
+    Aligned cluster 2:
+       70.5%  Eating + Sitting                          (481 windows total)
+       66.9%  Eating + Standing                         (605 windows total)
+       66.0%  Eating + Lying chest                      (297 windows total)
+       29.3%  Standing (pure)                           (2093 windows total)
+       22.3%  Lying chest (pure)                        (2238 windows total)
+       16.0%  Sitting (pure)                            (1842 windows total)
+
+    Aligned cluster 3:
+       21.4%  Sniffing (pure)                           (7006 windows total)
+        6.1%  Eating + Lying chest                      (297 windows total)
+
+    Aligned cluster 4:
+       97.1%  Drinking (pure)                           (241 windows total)
+       77.0%  Sniffing (pure)                           (7006 windows total)
+
+    Aligned cluster 5:
+       92.2%  Shaking (pure)                            (293 windows total)
+       61.1%  Synchronization (pure)                    (72 windows total)
+       42.8%  Jumping + Playing                         (138 windows total)
+       32.1%  Galloping + Playing                       (1304 windows total)
+       18.0%  Playing (pure)                            (2617 windows total)
+        5.6%  Galloping + Carrying object               (888 windows total)
+
+    Aligned cluster 6:
+       60.5%  Sitting (pure)                            (1842 windows total)
+       58.5%  Sitting + Panting                         (4449 windows total)
+
+    Aligned cluster 7:
+       38.8%  Standing + Panting                        (3969 windows total)
+       27.6%  Lying chest + Panting                     (5138 windows total)
+        7.6%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 8:
+       47.1%  Lying chest (pure)                        (2238 windows total)
+       35.7%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 9:
+       94.0%  Galloping + Carrying object               (888 windows total)
+       84.6%  Playing + Carrying object                 (1125 windows total)
+       67.7%  Galloping + Playing                       (1304 windows total)
+       55.2%  Trotting + Carrying object                (212 windows total)
+       53.6%  Trotting + Playing                        (224 windows total)
+       43.5%  Jumping + Playing                         (138 windows total)
+       43.4%  Playing (pure)                            (2617 windows total)
+       23.6%  Synchronization (pure)                    (72 windows total)
+       23.0%  Tugging + Playing                         (1867 windows total)
+        7.8%  Shaking (pure)                            (293 windows total)
+
+    Aligned cluster 10:
+       31.8%  Sitting + Panting                         (4449 windows total)
+       26.1%  Lying chest + Panting                     (5138 windows total)
+       15.3%  Standing + Panting                        (3969 windows total)
+       14.5%  Standing (pure)                           (2093 windows total)
+       11.1%  Eating + Standing                         (605 windows total)
+       11.0%  Lying chest (pure)                        (2238 windows total)
+       10.5%  Sitting (pure)                            (1842 windows total)
+        7.2%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 11:
+       57.9%  Walking + Eating                          (228 windows total)
+       43.7%  Walking (pure)                            (4342 windows total)
+       40.3%  Tugging + Playing                         (1867 windows total)
+       17.6%  Playing (pure)                            (2617 windows total)
+       13.0%  Jumping + Playing                         (138 windows total)
+        9.8%  Eating + Sitting                          (481 windows total)
+        9.7%  Synchronization (pure)                    (72 windows total)
+        7.4%  Eating + Lying chest                      (297 windows total)
+
+    Aligned cluster 12:
+       96.7%  Eating + Trotting                         (153 windows total)
+       96.1%  Trotting (pure)                           (4141 windows total)
+       93.9%  Pacing (pure)                             (734 windows total)
+       40.2%  Trotting + Playing                        (224 windows total)
+       38.2%  Trotting + Carrying object                (212 windows total)
+        7.6%  Playing (pure)                            (2617 windows total)
+        7.5%  Playing + Carrying object                 (1125 windows total)
+
+    Aligned cluster 13:
+       41.8%  Lying chest + Panting                     (5138 windows total)
+       41.5%  Standing + Panting                        (3969 windows total)
+        5.5%  Lying chest (pure)                        (2238 windows total)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 4  ( 77.0%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 13  ( 41.8%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 6  ( 58.5%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 55.8%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 12  ( 96.1%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 13  ( 41.5%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 9  ( 43.4%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 8  ( 47.1%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 8  ( 35.7%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 11  ( 40.3%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 6  ( 60.5%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 9  ( 67.7%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 9  ( 84.6%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 9  ( 94.0%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 12  ( 93.9%)
+
+──────────────────────────────────────────────────────────────────────
+K=14   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       71.1%  Walking (pure)                            (4342 windows total)
+       55.3%  Walking + Eating                          (228 windows total)
+       20.8%  Tugging + Playing                         (1867 windows total)
+       15.7%  Eating + Standing                         (605 windows total)
+       13.5%  Eating + Lying chest                      (297 windows total)
+       10.8%  Eating + Sitting                          (481 windows total)
+        9.0%  Lying chest (pure)                        (2238 windows total)
+        7.9%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 2:
+       36.2%  Standing + Panting                        (3969 windows total)
+       29.2%  Sitting + Panting                         (4449 windows total)
+       25.2%  Lying chest + Panting                     (5138 windows total)
+
+    Aligned cluster 3:
+       65.7%  Pacing (pure)                             (734 windows total)
+       63.8%  Trotting (pure)                           (4141 windows total)
+       56.2%  Eating + Trotting                         (153 windows total)
+       25.0%  Trotting + Playing                        (224 windows total)
+       23.6%  Trotting + Carrying object                (212 windows total)
+
+    Aligned cluster 4:
+      100.0%  Drinking (pure)                           (241 windows total)
+       77.1%  Sniffing (pure)                           (7006 windows total)
+
+    Aligned cluster 5:
+       92.2%  Shaking (pure)                            (293 windows total)
+       61.1%  Synchronization (pure)                    (72 windows total)
+       41.3%  Jumping + Playing                         (138 windows total)
+       31.7%  Galloping + Playing                       (1304 windows total)
+       17.5%  Playing (pure)                            (2617 windows total)
+        5.6%  Galloping + Carrying object               (888 windows total)
+
+    Aligned cluster 6:
+       77.3%  Eating + Sitting                          (481 windows total)
+       69.4%  Eating + Lying chest                      (297 windows total)
+       65.3%  Eating + Standing                         (605 windows total)
+       24.3%  Standing (pure)                           (2093 windows total)
+       21.3%  Lying chest (pure)                        (2238 windows total)
+       19.1%  Sitting (pure)                            (1842 windows total)
+       11.4%  Sitting + Panting                         (4449 windows total)
+        7.8%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 7:
+       45.2%  Standing (pure)                           (2093 windows total)
+       28.6%  Sitting (pure)                            (1842 windows total)
+       22.9%  Lying chest (pure)                        (2238 windows total)
+        8.8%  Eating + Lying chest                      (297 windows total)
+        6.4%  Eating + Standing                         (605 windows total)
+
+    Aligned cluster 8:
+       38.1%  Sitting (pure)                            (1842 windows total)
+       33.3%  Lying chest (pure)                        (2238 windows total)
+       12.5%  Standing + Panting                        (3969 windows total)
+        6.4%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 9:
+       94.3%  Galloping + Carrying object               (888 windows total)
+       83.7%  Playing + Carrying object                 (1125 windows total)
+       68.3%  Galloping + Playing                       (1304 windows total)
+       49.5%  Trotting + Carrying object                (212 windows total)
+       48.2%  Trotting + Playing                        (224 windows total)
+       44.2%  Jumping + Playing                         (138 windows total)
+       42.9%  Playing (pure)                            (2617 windows total)
+       22.8%  Tugging + Playing                         (1867 windows total)
+       15.3%  Synchronization (pure)                    (72 windows total)
+        9.8%  Eating + Trotting                         (153 windows total)
+        7.5%  Shaking (pure)                            (293 windows total)
+        6.3%  Pacing (pure)                             (734 windows total)
+
+    Aligned cluster 10:
+       30.3%  Sitting + Panting                         (4449 windows total)
+       28.1%  Lying chest + Panting                     (5138 windows total)
+       22.4%  Standing + Panting                        (3969 windows total)
+
+    Aligned cluster 11:
+       43.9%  Walking + Eating                          (228 windows total)
+       38.1%  Tugging + Playing                         (1867 windows total)
+       28.5%  Walking (pure)                            (4342 windows total)
+       18.6%  Playing (pure)                            (2617 windows total)
+       18.1%  Synchronization (pure)                    (72 windows total)
+       14.5%  Jumping + Playing                         (138 windows total)
+        7.1%  Trotting + Playing                        (224 windows total)
+        6.6%  Trotting + Carrying object                (212 windows total)
+        5.8%  Eating + Sitting                          (481 windows total)
+        5.7%  Eating + Lying chest                      (297 windows total)
+
+    Aligned cluster 12:
+       31.0%  Trotting (pure)                           (4141 windows total)
+       30.1%  Eating + Trotting                         (153 windows total)
+       24.1%  Pacing (pure)                             (734 windows total)
+       18.4%  Trotting + Carrying object                (212 windows total)
+       17.9%  Trotting + Playing                        (224 windows total)
+
+    Aligned cluster 13:
+       37.7%  Lying chest + Panting                     (5138 windows total)
+       24.8%  Sitting + Panting                         (4449 windows total)
+       21.1%  Standing + Panting                        (3969 windows total)
+       13.4%  Standing (pure)                           (2093 windows total)
+        9.9%  Eating + Standing                         (605 windows total)
+        9.3%  Lying chest (pure)                        (2238 windows total)
+
+    Aligned cluster 14:
+       21.4%  Sniffing (pure)                           (7006 windows total)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 4  ( 77.1%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 13  ( 37.7%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 10  ( 30.3%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 71.1%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 3  ( 63.8%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 2  ( 36.2%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 9  ( 42.9%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 8  ( 33.3%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 7  ( 45.2%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 11  ( 38.1%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 8  ( 38.1%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 9  ( 68.3%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 9  ( 83.7%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 9  ( 94.3%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 3  ( 65.7%)
+
+══════════════════════════════════════════════════════════════════════
+[ACDC-KL-best] fits — pair statistics at K=[4, 5, 7, 13, 14]
+══════════════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────────────────────────
+K=4   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       99.7%  Sniffing (pure)                           (7006 windows total)
+       99.6%  Drinking (pure)                           (241 windows total)
+       95.8%  Trotting (pure)                           (4141 windows total)
+       92.2%  Pacing (pure)                             (734 windows total)
+       85.0%  Eating + Trotting                         (153 windows total)
+       76.9%  Trotting + Carrying object                (212 windows total)
+       75.9%  Trotting + Playing                        (224 windows total)
+       63.6%  Walking + Eating                          (228 windows total)
+       55.9%  Tugging + Playing                         (1867 windows total)
+       50.3%  Walking (pure)                            (4342 windows total)
+       40.6%  Playing (pure)                            (2617 windows total)
+       30.6%  Synchronization (pure)                    (72 windows total)
+       16.7%  Jumping + Playing                         (138 windows total)
+       16.2%  Playing + Carrying object                 (1125 windows total)
+       10.6%  Eating + Sitting                          (481 windows total)
+
+    Aligned cluster 2:
+       89.8%  Standing + Panting                        (3969 windows total)
+       88.1%  Lying chest + Panting                     (5138 windows total)
+       76.8%  Sitting + Panting                         (4449 windows total)
+       69.1%  Sitting (pure)                            (1842 windows total)
+       60.9%  Lying chest (pure)                        (2238 windows total)
+       19.4%  Standing (pure)                           (2093 windows total)
+        5.4%  Eating + Lying chest                      (297 windows total)
+
+    Aligned cluster 3:
+       99.0%  Shaking (pure)                            (293 windows total)
+       98.5%  Galloping + Playing                       (1304 windows total)
+       98.0%  Galloping + Carrying object               (888 windows total)
+       83.3%  Jumping + Playing                         (138 windows total)
+       81.7%  Playing + Carrying object                 (1125 windows total)
+       69.4%  Synchronization (pure)                    (72 windows total)
+       49.1%  Playing (pure)                            (2617 windows total)
+       24.1%  Trotting + Playing                        (224 windows total)
+       23.1%  Trotting + Carrying object                (212 windows total)
+       18.1%  Tugging + Playing                         (1867 windows total)
+       15.0%  Eating + Trotting                         (153 windows total)
+        7.8%  Pacing (pure)                             (734 windows total)
+
+    Aligned cluster 4:
+       90.9%  Eating + Standing                         (605 windows total)
+       84.8%  Eating + Lying chest                      (297 windows total)
+       84.2%  Eating + Sitting                          (481 windows total)
+       75.6%  Standing (pure)                           (2093 windows total)
+       49.4%  Walking (pure)                            (4342 windows total)
+       34.6%  Walking + Eating                          (228 windows total)
+       33.5%  Lying chest (pure)                        (2238 windows total)
+       24.8%  Sitting (pure)                            (1842 windows total)
+       21.7%  Tugging + Playing                         (1867 windows total)
+       21.5%  Sitting + Panting                         (4449 windows total)
+       11.1%  Lying chest + Panting                     (5138 windows total)
+        8.8%  Standing + Panting                        (3969 windows total)
+        8.4%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 5:
+      (none above 5%)
+
+    Aligned cluster 6:
+      (none above 5%)
+
+    Aligned cluster 7:
+      (none above 5%)
+
+    Aligned cluster 8:
+      (none above 5%)
+
+    Aligned cluster 9:
+      (none above 5%)
+
+    Aligned cluster 10:
+      (none above 5%)
+
+    Aligned cluster 11:
+      (none above 5%)
+
+    Aligned cluster 12:
+      (none above 5%)
+
+    Aligned cluster 13:
+      (none above 5%)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 1  ( 99.7%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 2  ( 88.1%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 2  ( 76.8%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 50.3%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 1  ( 95.8%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 2  ( 89.8%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 3  ( 49.1%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 2  ( 60.9%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 4  ( 75.6%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 1  ( 55.9%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 2  ( 69.1%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 3  ( 98.5%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 3  ( 81.7%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 3  ( 98.0%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 1  ( 92.2%)
+
+──────────────────────────────────────────────────────────────────────
+K=5   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       96.3%  Drinking (pure)                           (241 windows total)
+       85.0%  Eating + Sitting                          (481 windows total)
+       84.6%  Eating + Standing                         (605 windows total)
+       83.2%  Eating + Lying chest                      (297 windows total)
+       73.1%  Walking (pure)                            (4342 windows total)
+       70.1%  Sniffing (pure)                           (7006 windows total)
+       56.6%  Walking + Eating                          (228 windows total)
+       33.7%  Tugging + Playing                         (1867 windows total)
+       33.2%  Standing (pure)                           (2093 windows total)
+       31.5%  Lying chest (pure)                        (2238 windows total)
+       23.1%  Sitting (pure)                            (1842 windows total)
+       14.2%  Sitting + Panting                         (4449 windows total)
+       13.6%  Playing (pure)                            (2617 windows total)
+        7.9%  Lying chest + Panting                     (5138 windows total)
+        7.7%  Standing + Panting                        (3969 windows total)
+
+    Aligned cluster 2:
+       67.2%  Sitting (pure)                            (1842 windows total)
+       53.6%  Lying chest (pure)                        (2238 windows total)
+       43.0%  Standing (pure)                           (2093 windows total)
+       30.9%  Sitting + Panting                         (4449 windows total)
+       10.1%  Eating + Lying chest                      (297 windows total)
+        6.1%  Eating + Standing                         (605 windows total)
+
+    Aligned cluster 3:
+       96.6%  Shaking (pure)                            (293 windows total)
+       83.2%  Galloping + Playing                       (1304 windows total)
+       76.2%  Galloping + Carrying object               (888 windows total)
+       73.2%  Jumping + Playing                         (138 windows total)
+       65.3%  Synchronization (pure)                    (72 windows total)
+       60.9%  Playing + Carrying object                 (1125 windows total)
+       39.7%  Playing (pure)                            (2617 windows total)
+        9.9%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 4:
+       91.8%  Standing + Panting                        (3969 windows total)
+       88.9%  Lying chest + Panting                     (5138 windows total)
+       54.1%  Sitting + Panting                         (4449 windows total)
+       22.6%  Standing (pure)                           (2093 windows total)
+       13.5%  Lying chest (pure)                        (2238 windows total)
+        8.1%  Eating + Standing                         (605 windows total)
+        7.4%  Sitting (pure)                            (1842 windows total)
+        5.9%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 5:
+      100.0%  Eating + Trotting                         (153 windows total)
+       99.5%  Trotting (pure)                           (4141 windows total)
+       98.8%  Pacing (pure)                             (734 windows total)
+       94.6%  Trotting + Playing                        (224 windows total)
+       94.3%  Trotting + Carrying object                (212 windows total)
+       50.5%  Tugging + Playing                         (1867 windows total)
+       45.4%  Playing (pure)                            (2617 windows total)
+       42.5%  Walking + Eating                          (228 windows total)
+       36.5%  Playing + Carrying object                 (1125 windows total)
+       31.9%  Synchronization (pure)                    (72 windows total)
+       29.8%  Sniffing (pure)                           (7006 windows total)
+       26.9%  Walking (pure)                            (4342 windows total)
+       26.8%  Jumping + Playing                         (138 windows total)
+       23.8%  Galloping + Carrying object               (888 windows total)
+       16.8%  Galloping + Playing                       (1304 windows total)
+
+    Aligned cluster 6:
+      (none above 5%)
+
+    Aligned cluster 7:
+      (none above 5%)
+
+    Aligned cluster 8:
+      (none above 5%)
+
+    Aligned cluster 9:
+      (none above 5%)
+
+    Aligned cluster 10:
+      (none above 5%)
+
+    Aligned cluster 11:
+      (none above 5%)
+
+    Aligned cluster 12:
+      (none above 5%)
+
+    Aligned cluster 13:
+      (none above 5%)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 1  ( 70.1%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 4  ( 88.9%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 4  ( 54.1%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 73.1%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 5  ( 99.5%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 4  ( 91.8%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 5  ( 45.4%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 2  ( 53.6%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 43.0%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 5  ( 50.5%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 2  ( 67.2%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 3  ( 83.2%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 3  ( 60.9%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 3  ( 76.2%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 5  ( 98.8%)
+
+──────────────────────────────────────────────────────────────────────
+K=7   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       96.0%  Walking (pure)                            (4342 windows total)
+       80.3%  Walking + Eating                          (228 windows total)
+       39.7%  Eating + Lying chest                      (297 windows total)
+       38.9%  Tugging + Playing                         (1867 windows total)
+       34.0%  Eating + Standing                         (605 windows total)
+       26.6%  Eating + Sitting                          (481 windows total)
+       16.2%  Drinking (pure)                           (241 windows total)
+       15.2%  Lying chest (pure)                        (2238 windows total)
+       15.1%  Playing (pure)                            (2617 windows total)
+        7.4%  Sitting (pure)                            (1842 windows total)
+        6.6%  Standing (pure)                           (2093 windows total)
+        5.6%  Synchronization (pure)                    (72 windows total)
+
+    Aligned cluster 2:
+       68.0%  Eating + Sitting                          (481 windows total)
+       60.7%  Eating + Standing                         (605 windows total)
+       57.2%  Eating + Lying chest                      (297 windows total)
+       42.4%  Standing (pure)                           (2093 windows total)
+       32.1%  Sitting + Panting                         (4449 windows total)
+       30.5%  Lying chest (pure)                        (2238 windows total)
+       26.6%  Sitting (pure)                            (1842 windows total)
+       14.7%  Lying chest + Panting                     (5138 windows total)
+       10.7%  Standing + Panting                        (3969 windows total)
+       10.3%  Tugging + Playing                         (1867 windows total)
+        5.3%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 3:
+       96.6%  Shaking (pure)                            (293 windows total)
+       70.3%  Jumping + Playing                         (138 windows total)
+       65.6%  Galloping + Playing                       (1304 windows total)
+       65.3%  Synchronization (pure)                    (72 windows total)
+       50.7%  Galloping + Carrying object               (888 windows total)
+       40.0%  Playing + Carrying object                 (1125 windows total)
+       35.0%  Playing (pure)                            (2617 windows total)
+        7.1%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 4:
+       86.4%  Standing + Panting                        (3969 windows total)
+       80.0%  Lying chest + Panting                     (5138 windows total)
+       33.5%  Sitting + Panting                         (4449 windows total)
+       15.3%  Standing (pure)                           (2093 windows total)
+        9.0%  Lying chest (pure)                        (2238 windows total)
+
+    Aligned cluster 5:
+      100.0%  Eating + Trotting                         (153 windows total)
+       99.5%  Trotting (pure)                           (4141 windows total)
+       98.8%  Pacing (pure)                             (734 windows total)
+       97.3%  Trotting + Playing                        (224 windows total)
+       97.2%  Trotting + Carrying object                (212 windows total)
+       57.2%  Playing + Carrying object                 (1125 windows total)
+       49.3%  Galloping + Carrying object               (888 windows total)
+       42.5%  Playing (pure)                            (2617 windows total)
+       39.8%  Tugging + Playing                         (1867 windows total)
+       34.4%  Galloping + Playing                       (1304 windows total)
+       29.2%  Synchronization (pure)                    (72 windows total)
+       26.1%  Jumping + Playing                         (138 windows total)
+       17.5%  Walking + Eating                          (228 windows total)
+
+    Aligned cluster 6:
+       99.0%  Sniffing (pure)                           (7006 windows total)
+       83.8%  Drinking (pure)                           (241 windows total)
+
+    Aligned cluster 7:
+       60.6%  Sitting (pure)                            (1842 windows total)
+       45.3%  Lying chest (pure)                        (2238 windows total)
+       32.4%  Standing (pure)                           (2093 windows total)
+       29.3%  Sitting + Panting                         (4449 windows total)
+
+    Aligned cluster 8:
+      (none above 5%)
+
+    Aligned cluster 9:
+      (none above 5%)
+
+    Aligned cluster 10:
+      (none above 5%)
+
+    Aligned cluster 11:
+      (none above 5%)
+
+    Aligned cluster 12:
+      (none above 5%)
+
+    Aligned cluster 13:
+      (none above 5%)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 6  ( 99.0%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 4  ( 80.0%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 4  ( 33.5%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 96.0%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 5  ( 99.5%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 4  ( 86.4%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 5  ( 42.5%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 7  ( 45.3%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 42.4%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 5  ( 39.8%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 7  ( 60.6%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 3  ( 65.6%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 5  ( 57.2%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 3  ( 50.7%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 5  ( 98.8%)
+
+──────────────────────────────────────────────────────────────────────
+K=13   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       56.1%  Walking + Eating                          (228 windows total)
+       36.7%  Eating + Lying chest                      (297 windows total)
+       33.8%  Walking (pure)                            (4342 windows total)
+       14.8%  Tugging + Playing                         (1867 windows total)
+       14.3%  Eating + Sitting                          (481 windows total)
+       11.8%  Lying chest (pure)                        (2238 windows total)
+       10.6%  Eating + Standing                         (605 windows total)
+
+    Aligned cluster 2:
+       64.5%  Eating + Standing                         (605 windows total)
+       63.0%  Eating + Sitting                          (481 windows total)
+       54.9%  Eating + Lying chest                      (297 windows total)
+       37.0%  Standing (pure)                           (2093 windows total)
+       25.0%  Lying chest (pure)                        (2238 windows total)
+       18.7%  Sitting (pure)                            (1842 windows total)
+
+    Aligned cluster 3:
+       92.2%  Shaking (pure)                            (293 windows total)
+       61.1%  Synchronization (pure)                    (72 windows total)
+       42.0%  Jumping + Playing                         (138 windows total)
+       32.0%  Galloping + Playing                       (1304 windows total)
+       17.8%  Playing (pure)                            (2617 windows total)
+        5.6%  Galloping + Carrying object               (888 windows total)
+
+    Aligned cluster 4:
+       74.4%  Standing + Panting                        (3969 windows total)
+       59.7%  Lying chest + Panting                     (5138 windows total)
+       25.9%  Sitting + Panting                         (4449 windows total)
+       10.5%  Standing (pure)                           (2093 windows total)
+        6.4%  Lying chest (pure)                        (2238 windows total)
+
+    Aligned cluster 5:
+       93.2%  Pacing (pure)                             (734 windows total)
+       89.5%  Eating + Trotting                         (153 windows total)
+       54.5%  Trotting (pure)                           (4141 windows total)
+       42.4%  Trotting + Playing                        (224 windows total)
+       40.6%  Trotting + Carrying object                (212 windows total)
+        7.8%  Playing + Carrying object                 (1125 windows total)
+        6.6%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 6:
+       99.2%  Drinking (pure)                           (241 windows total)
+       77.1%  Sniffing (pure)                           (7006 windows total)
+
+    Aligned cluster 7:
+       33.1%  Walking (pure)                            (4342 windows total)
+       13.4%  Eating + Standing                         (605 windows total)
+       11.4%  Eating + Sitting                          (481 windows total)
+        9.6%  Tugging + Playing                         (1867 windows total)
+        6.9%  Sitting + Panting                         (4449 windows total)
+        5.0%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 8:
+       57.9%  Sitting (pure)                            (1842 windows total)
+       39.8%  Lying chest (pure)                        (2238 windows total)
+       29.0%  Sitting + Panting                         (4449 windows total)
+       26.5%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 9:
+       94.1%  Galloping + Carrying object               (888 windows total)
+       84.0%  Playing + Carrying object                 (1125 windows total)
+       67.9%  Galloping + Playing                       (1304 windows total)
+       51.4%  Trotting + Carrying object                (212 windows total)
+       50.0%  Trotting + Playing                        (224 windows total)
+       43.5%  Jumping + Playing                         (138 windows total)
+       42.9%  Playing (pure)                            (2617 windows total)
+       22.3%  Tugging + Playing                         (1867 windows total)
+       20.8%  Synchronization (pure)                    (72 windows total)
+        7.8%  Eating + Trotting                         (153 windows total)
+        7.5%  Shaking (pure)                            (293 windows total)
+
+    Aligned cluster 10:
+       43.0%  Walking + Eating                          (228 windows total)
+       39.4%  Tugging + Playing                         (1867 windows total)
+       32.6%  Walking (pure)                            (4342 windows total)
+       17.8%  Playing (pure)                            (2617 windows total)
+       16.7%  Synchronization (pure)                    (72 windows total)
+       14.5%  Jumping + Playing                         (138 windows total)
+        6.7%  Eating + Sitting                          (481 windows total)
+        6.1%  Trotting + Carrying object                (212 windows total)
+        5.8%  Trotting + Playing                        (224 windows total)
+
+    Aligned cluster 11:
+       40.2%  Trotting (pure)                           (4141 windows total)
+
+    Aligned cluster 12:
+       33.9%  Sitting + Panting                         (4449 windows total)
+       32.7%  Lying chest + Panting                     (5138 windows total)
+       20.4%  Standing + Panting                        (3969 windows total)
+       13.8%  Standing (pure)                           (2093 windows total)
+       10.1%  Lying chest (pure)                        (2238 windows total)
+        8.4%  Sitting (pure)                            (1842 windows total)
+        7.9%  Eating + Standing                         (605 windows total)
+        7.9%  Tugging + Playing                         (1867 windows total)
+
+    Aligned cluster 13:
+       21.4%  Sniffing (pure)                           (7006 windows total)
+
+    Aligned cluster 14:
+      (none above 5%)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 6  ( 77.1%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 4  ( 59.7%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 12  ( 33.9%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 1  ( 33.8%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 5  ( 54.5%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 4  ( 74.4%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 9  ( 42.9%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 8  ( 39.8%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 37.0%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 10  ( 39.4%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 8  ( 57.9%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 9  ( 67.9%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 9  ( 84.0%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 9  ( 94.1%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 5  ( 93.2%)
+
+──────────────────────────────────────────────────────────────────────
+K=14   pair statistics (Aligned cluster-aligned, 14 clusters)
+──────────────────────────────────────────────────────────────────────
+
+  Per-cluster top 15 pairs (by % of pair's bins in that cluster):
+
+    Aligned cluster 1:
+       30.7%  Drinking (pure)                           (241 windows total)
+       27.8%  Walking (pure)                            (4342 windows total)
+       16.5%  Eating + Lying chest                      (297 windows total)
+       14.9%  Walking + Eating                          (228 windows total)
+       11.1%  Tugging + Playing                         (1867 windows total)
+       10.4%  Lying chest (pure)                        (2238 windows total)
+        6.1%  Eating + Standing                         (605 windows total)
+        5.1%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 2:
+       63.5%  Eating + Standing                         (605 windows total)
+       63.0%  Eating + Sitting                          (481 windows total)
+       60.3%  Eating + Lying chest                      (297 windows total)
+       34.3%  Standing (pure)                           (2093 windows total)
+       25.1%  Lying chest (pure)                        (2238 windows total)
+       20.9%  Sitting (pure)                            (1842 windows total)
+
+    Aligned cluster 3:
+       90.4%  Shaking (pure)                            (293 windows total)
+       50.0%  Synchronization (pure)                    (72 windows total)
+       17.4%  Jumping + Playing                         (138 windows total)
+       12.5%  Playing (pure)                            (2617 windows total)
+       12.3%  Galloping + Playing                       (1304 windows total)
+
+    Aligned cluster 4:
+       66.9%  Standing + Panting                        (3969 windows total)
+       59.0%  Lying chest + Panting                     (5138 windows total)
+       25.5%  Sitting + Panting                         (4449 windows total)
+
+    Aligned cluster 5:
+       83.5%  Pacing (pure)                             (734 windows total)
+       67.3%  Eating + Trotting                         (153 windows total)
+       44.9%  Trotting (pure)                           (4141 windows total)
+       37.1%  Trotting + Playing                        (224 windows total)
+       36.8%  Trotting + Carrying object                (212 windows total)
+        7.3%  Playing + Carrying object                 (1125 windows total)
+
+    Aligned cluster 6:
+       98.7%  Sniffing (pure)                           (7006 windows total)
+       69.3%  Drinking (pure)                           (241 windows total)
+
+    Aligned cluster 7:
+       32.5%  Sitting + Panting                         (4449 windows total)
+       30.3%  Lying chest + Panting                     (5138 windows total)
+       17.9%  Standing + Panting                        (3969 windows total)
+       12.7%  Standing (pure)                           (2093 windows total)
+        9.6%  Eating + Standing                         (605 windows total)
+        7.9%  Sitting (pure)                            (1842 windows total)
+        7.6%  Lying chest (pure)                        (2238 windows total)
+
+    Aligned cluster 8:
+       30.0%  Standing (pure)                           (2093 windows total)
+       29.5%  Sitting + Panting                         (4449 windows total)
+
+    Aligned cluster 9:
+       97.6%  Galloping + Carrying object               (888 windows total)
+       86.9%  Galloping + Playing                       (1304 windows total)
+       80.7%  Playing + Carrying object                 (1125 windows total)
+       65.9%  Jumping + Playing                         (138 windows total)
+       37.4%  Playing (pure)                            (2617 windows total)
+       22.2%  Synchronization (pure)                    (72 windows total)
+       19.6%  Trotting + Playing                        (224 windows total)
+       19.3%  Trotting + Carrying object                (212 windows total)
+       16.1%  Tugging + Playing                         (1867 windows total)
+       12.4%  Eating + Trotting                         (153 windows total)
+        7.8%  Shaking (pure)                            (293 windows total)
+
+    Aligned cluster 10:
+       67.5%  Walking + Eating                          (228 windows total)
+       39.3%  Walking (pure)                            (4342 windows total)
+       19.7%  Tugging + Playing                         (1867 windows total)
+       12.5%  Eating + Sitting                          (481 windows total)
+       10.8%  Eating + Lying chest                      (297 windows total)
+        7.3%  Eating + Standing                         (605 windows total)
+        7.3%  Playing (pure)                            (2617 windows total)
+
+    Aligned cluster 11:
+       40.0%  Trotting (pure)                           (4141 windows total)
+
+    Aligned cluster 12:
+       54.8%  Sitting (pure)                            (1842 windows total)
+       45.9%  Lying chest (pure)                        (2238 windows total)
+        8.0%  Standing + Panting                        (3969 windows total)
+        6.4%  Standing (pure)                           (2093 windows total)
+
+    Aligned cluster 13:
+       40.6%  Trotting + Carrying object                (212 windows total)
+       40.2%  Trotting + Playing                        (224 windows total)
+       32.7%  Tugging + Playing                         (1867 windows total)
+       26.0%  Playing (pure)                            (2617 windows total)
+       22.2%  Synchronization (pure)                    (72 windows total)
+       17.6%  Eating + Trotting                         (153 windows total)
+       15.4%  Walking + Eating                          (228 windows total)
+       13.0%  Jumping + Playing                         (138 windows total)
+       12.8%  Trotting (pure)                           (4141 windows total)
+       12.0%  Pacing (pure)                             (734 windows total)
+        8.1%  Playing + Carrying object                 (1125 windows total)
+
+    Aligned cluster 14:
+       28.7%  Walking (pure)                            (4342 windows total)
+       14.6%  Eating + Sitting                          (481 windows total)
+       11.7%  Eating + Standing                         (605 windows total)
+        8.6%  Tugging + Playing                         (1867 windows total)
+        8.2%  Sitting + Panting                         (4449 windows total)
+        8.1%  Eating + Lying chest                      (297 windows total)
+        7.3%  Lying chest (pure)                        (2238 windows total)
+        6.0%  Sitting (pure)                            (1842 windows total)
+
+  Top 15 most frequent pairs overall:
+      7006 windows  Sniffing (pure)                           ->  Aligned cluster 6  ( 98.7%)
+      5138 windows  Lying chest + Panting                     ->  Aligned cluster 4  ( 59.0%)
+      4449 windows  Sitting + Panting                         ->  Aligned cluster 7  ( 32.5%)
+      4342 windows  Walking (pure)                            ->  Aligned cluster 10  ( 39.3%)
+      4141 windows  Trotting (pure)                           ->  Aligned cluster 5  ( 44.9%)
+      3969 windows  Standing + Panting                        ->  Aligned cluster 4  ( 66.9%)
+      2617 windows  Playing (pure)                            ->  Aligned cluster 9  ( 37.4%)
+      2238 windows  Lying chest (pure)                        ->  Aligned cluster 12  ( 45.9%)
+      2093 windows  Standing (pure)                           ->  Aligned cluster 2  ( 34.3%)
+      1867 windows  Tugging + Playing                         ->  Aligned cluster 13  ( 32.7%)
+      1842 windows  Sitting (pure)                            ->  Aligned cluster 12  ( 54.8%)
+      1304 windows  Galloping + Playing                       ->  Aligned cluster 9  ( 86.9%)
+      1125 windows  Playing + Carrying object                 ->  Aligned cluster 9  ( 80.7%)
+       888 windows  Galloping + Carrying object               ->  Aligned cluster 9  ( 97.6%)
+       734 windows  Pacing (pure)                             ->  Aligned cluster 5  ( 83.5%)

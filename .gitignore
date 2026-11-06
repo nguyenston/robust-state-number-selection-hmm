@@ -1,0 +1,6 @@
+/notebooks/data/**
+!/notebooks/data/README.md
+/notebooks/cache/
+**/.ipynb_checkpoints/
+**/.CondaPkg/
+.DS_Store

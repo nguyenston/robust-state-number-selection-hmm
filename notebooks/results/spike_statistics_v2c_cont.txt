@@ -1,0 +1,491 @@
+======================================================================
+SPIKE-TRAIN HMM STATISTICS
+Generated:  2026-10-31T15:49:55.211
+======================================================================
+
+--- Model Legend ---
+  matched    : PoissonEmission on Poisson data (correctly specified)
+  mismatched : PoissonEmission on NegBin data (overdispersion mismatch)
+
+Ground-truth Poisson HMM:
+  K_true   = 5
+  D        = 5  (neurons)
+  T        = 20000  bins
+  bin_ms   = 100  ms
+  duration = 2000.0  s
+  seed     = 42
+  Transition matrix A (A_ii = 0.96):
+    [0.960  0.010  0.010  0.010  0.010]
+    [0.010  0.960  0.010  0.010  0.010]
+    [0.010  0.010  0.960  0.010  0.010]
+    [0.010  0.010  0.010  0.960  0.010]
+    [0.010  0.010  0.010  0.010  0.960]
+  State occupancy (empirical):
+    State 1 [silent]:  20.8%  rates (Hz) = [2.0, 2.0, 2.0, 2.0, 2.0]
+    State 2 [chaotic]:  18.6%  rates (Hz) = [2.0, 25.0, 80.0, 2.0, 25.0]
+    State 3 [up]:  23.2%  rates (Hz) = [25.0, 30.0, 20.0, 35.0, 25.0]
+    State 4 [burst_a]:  19.7%  rates (Hz) = [80.0, 5.0, 80.0, 5.0, 80.0]
+    State 5 [burst_b]:  17.7%  rates (Hz) = [5.0, 80.0, 5.0, 80.0, 5.0]
+
+──────────────────────────────────────────────────────────────────────
+[matched] base: Poisson HMM (correctly specified)
+──────────────────────────────────────────────────────────────────────
+K      LL            BIC           ICL           KL discs
+K=1    -299234.0     598517.5      598517.5      KL[6.036676]  
+K=2    -227277.1     454682.8      455078.0      KL[3.242638  2.697056]  
+K=3    -190437.1     381101.9      381422.8      KL[2.703804  0.073793  1.329592]  
+K=4    -164183.4     328713.5      328809.7      KL[0.061733  0.075790  1.342947  0.066972]  
+K=5    -148532.1     297549.4      297621.0      KL[0.055015  0.064604  0.065723  0.042382  0.061718]  ← BIC ← ICL ← GT
+K=6    -148519.5     297682.8      298388.7      KL[0.056480  0.062138  0.058359  0.060877  0.063612  0.045029]  ← ACDC(KL)
+K=7    -148507.6     297837.3      304008.9      KL[0.040893  0.052927  0.059851  0.070113  0.065489  0.057951  0.070949]  
+K=8    -148496.5     298013.0      299278.3      KL[0.053192  0.042642  0.070193  0.065090  0.055466  0.068644  0.060928  0.063466]  
+K=9    -148478.7     298195.4      305185.0      KL[0.066838  0.059896  0.069566  0.025662  0.065327  0.071051  0.058975  0.000000  0.006299]  
+K=10   -148471.0     298417.5      304838.3      KL[0.000000  0.072074  0.077153  0.062479  0.069868  0.057658  0.000000  0.072277  0.072234  0.065617]  
+
+──────────────────────────────────────────────────────────────────────
+ACDC envelope — KL
+──────────────────────────────────────────────────────────────────────
+  Raw zero-points (per K):
+    ★ K=1    z = 6.0367
+    ★ K=2    z = 3.2426
+    ★ K=3    z = 2.7038
+    ★ K=4    z = 1.3429
+    ★ K=5    z = 0.0657
+    ★ K=6    z = 0.0636
+      K=7    z = 0.0709
+      K=8    z = 0.0702
+      K=9    z = 0.0711
+      K=10   z = 0.0772
+
+  Envelope points (★) and inter-point drops:
+    K=1    z = 6.0367
+    K=2    z = 3.2426   (Δ K=1→K=2: −46.3%)
+    K=3    z = 2.7038   (Δ K=2→K=3: −16.6%)
+    K=4    z = 1.3429   (Δ K=3→K=4: −50.3%)
+    K=5    z = 0.0657   (Δ K=4→K=5: −95.1%)
+    K=6    z = 0.0636   (Δ K=5→K=6: −3.2%)
+  Last envelope K = 6   (z = 0.0636)
+
+──────────────────────────────────────────────────────────────────────
+Composition tables — BIC-best fits  (GT state → fitted-component %)
+Components sorted by total per-bin firing rate, low → high.
+──────────────────────────────────────────────────────────────────────
+
+  K=1   (components C1=quietest, C1=burstiest)
+    GT state       C1   total
+    silent     100.0%    4165 bins
+    chaotic    100.0%    3726 bins
+    up         100.0%    4631 bins
+    burst_a    100.0%    3934 bins
+    burst_b    100.0%    3544 bins
+    rate Σλ:     13.8    (sum λ per bin)
+
+  K=2   (components C1=quietest, C2=burstiest)
+    GT state       C1     C2   total
+    silent     100.0%   0.0%    4165 bins
+    chaotic      0.7%  99.3%    3726 bins
+    up          97.9%   2.1%    4631 bins
+    burst_a      0.0% 100.0%    3934 bins
+    burst_b    100.0%   0.0%    3544 bins
+    rate Σλ:     10.4   19.4    (sum λ per bin)
+
+  K=3   (components C1=quietest, C3=burstiest)
+    GT state       C1     C2     C3   total
+    silent     100.0%   0.0%   0.0%    4165 bins
+    chaotic      0.1%   0.1%  99.8%    3726 bins
+    up           0.1%  98.2%   1.7%    4631 bins
+    burst_a      0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      1.0   15.2   19.3    (sum λ per bin)
+
+  K=4   (components C1=quietest, C4=burstiest)
+    GT state       C1     C2     C3     C4   total
+    silent     100.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.3%  99.5%   0.2%    4631 bins
+    burst_a      0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      1.0   13.4   15.2   25.0    (sum λ per bin)
+
+  K=5   (components C1=quietest, C5=burstiest)
+    GT state       C1     C2     C3     C4     C5   total
+    silent     100.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%  99.8%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=6   (components C1=quietest, C6=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6   total
+    silent     100.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.5%   0.0%  99.2%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.1%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0   11.1   13.4   13.5   17.5   25.0    (sum λ per bin)
+
+  K=7   (components C1=quietest, C7=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7   total
+    silent      73.9%   3.2%  22.9%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.0%  99.8%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.1    1.1   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=8   (components C1=quietest, C8=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8   total
+    silent      18.4%   5.9%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.6%   0.0%  99.2%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.0    1.0   11.1   13.4   13.5   17.5   25.0    (sum λ per bin)
+
+  K=9   (components C1=quietest, C9=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9   total
+    silent       9.7%  86.3%   3.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0%  98.5%   0.0%   1.4%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.5%   0.0%  99.2%   0.0%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%   0.0%   0.1%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.0    1.2   10.8   13.3   13.5   14.8   17.5   25.0    (sum λ per bin)
+
+  K=10   (components C1=quietest, C10=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9    C10   total
+    silent      84.9%  10.2%   3.8%   1.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0%   0.0%   0.2%  99.8%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.0%   0.5%   0.0%   0.0%  99.3%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.0    1.2    1.2   10.9   11.8   13.4   13.5   17.5   25.0    (sum λ per bin)
+
+──────────────────────────────────────────────────────────────────────
+Composition tables — ACDC-KL-best fits  (GT state → fitted-component %)
+Components sorted by total per-bin firing rate, low → high.
+──────────────────────────────────────────────────────────────────────
+
+  K=1   (components C1=quietest, C1=burstiest)
+    GT state       C1   total
+    silent     100.0%    4165 bins
+    chaotic    100.0%    3726 bins
+    up         100.0%    4631 bins
+    burst_a    100.0%    3934 bins
+    burst_b    100.0%    3544 bins
+    rate Σλ:     13.8    (sum λ per bin)
+
+  K=2   (components C1=quietest, C2=burstiest)
+    GT state       C1     C2   total
+    silent     100.0%   0.0%    4165 bins
+    chaotic      0.7%  99.3%    3726 bins
+    up          97.9%   2.1%    4631 bins
+    burst_a      0.0% 100.0%    3934 bins
+    burst_b    100.0%   0.0%    3544 bins
+    rate Σλ:     10.4   19.4    (sum λ per bin)
+
+  K=3   (components C1=quietest, C3=burstiest)
+    GT state       C1     C2     C3   total
+    silent     100.0%   0.0%   0.0%    4165 bins
+    chaotic      0.1%   0.1%  99.8%    3726 bins
+    up           0.1%  98.2%   1.7%    4631 bins
+    burst_a      0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      1.0   15.2   19.3    (sum λ per bin)
+
+  K=4   (components C1=quietest, C4=burstiest)
+    GT state       C1     C2     C3     C4   total
+    silent     100.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.3%  99.5%   0.2%    4631 bins
+    burst_a      0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      1.0   13.4   15.2   25.0    (sum λ per bin)
+
+  K=5   (components C1=quietest, C5=burstiest)
+    GT state       C1     C2     C3     C4     C5   total
+    silent     100.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%  99.8%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=6   (components C1=quietest, C6=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6   total
+    silent      57.8%  42.1%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%  99.8%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.1   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=7   (components C1=quietest, C7=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7   total
+    silent      93.3%   3.3%   3.3%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.0%  99.8%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.1    1.1   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=8   (components C1=quietest, C8=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8   total
+    silent     100.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   2.2%  19.1%   0.1%  78.4%   0.2%   0.0%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%  99.2%   0.8%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.1%  99.9%   0.0%   0.0%    3544 bins
+    rate Σλ:      1.0   12.1   13.4   13.4   13.6   17.5   24.9   25.8    (sum λ per bin)
+
+  K=9   (components C1=quietest, C9=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9   total
+    silent      66.9%  31.1%   2.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.2%   0.3%   0.0%  99.4%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    1.0    1.1    5.6   13.1   13.4   13.5   17.5   25.0    (sum λ per bin)
+
+  K=10   (components C1=quietest, C10=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9    C10   total
+    silent       6.4%  79.7%   6.9%   7.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.0%   0.0%  99.6%   0.2%   0.1%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.1%   0.0%  99.9%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.0%   0.1%   0.0%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      0.9    1.0    1.1    1.1   13.4   13.4   14.0   16.1   17.5   25.0    (sum λ per bin)
+
+──────────────────────────────────────────────────────────────────────
+[mismatched_burstcontam] base: Poisson HMM (correctly specified)
+──────────────────────────────────────────────────────────────────────
+K      LL            BIC           ICL           KL discs
+K=1    -314541.3     629132.1      629132.1      KL[6.327903]  
+K=2    -246097.3     492323.4      493573.5      KL[3.091860  3.490924]  
+K=3    -211479.0     423185.8      424727.3      KL[1.777872  3.049918  0.706696]  
+K=4    -188356.0     377058.6      378236.2      KL[0.722000  0.650995  1.859425  0.619090]  
+K=5    -174061.3     348607.9      349716.8      KL[0.593735  0.639838  0.570697  0.558731  0.717416]  ← GT
+K=6    -171068.9     342781.6      344336.0      KL[0.580426  0.626190  0.593764  0.265109  0.633010  0.627153]  
+K=7    -169618.3     340058.6      341779.9      KL[0.637947  0.596509  0.263842  0.629963  0.561735  0.460237  0.547118]  
+K=8    -168898.9     338818.0      341184.9      KL[0.624008  0.220933  0.580059  0.243945  0.524718  0.483338  0.346234  0.546395]  ← ICL
+K=9    -168329.2     337896.4      342627.3      KL[0.533722  0.472422  0.194026  0.216661  0.512898  0.163064  0.586771  0.617423  0.216793]  
+K=10   -167787.8     337051.2      343550.1      KL[0.193107  0.217362  0.501249  0.570005  0.411579  0.507538  0.515869  0.435895  0.413729  0.493520]  ← BIC ← ACDC(KL)
+
+──────────────────────────────────────────────────────────────────────
+ACDC envelope — KL
+──────────────────────────────────────────────────────────────────────
+  Raw zero-points (per K):
+    ★ K=1    z = 6.3279
+    ★ K=2    z = 3.4909
+    ★ K=3    z = 3.0499
+    ★ K=4    z = 1.8594
+    ★ K=5    z = 0.7174
+    ★ K=6    z = 0.6330
+      K=7    z = 0.6379
+    ★ K=8    z = 0.6240
+    ★ K=9    z = 0.6174
+    ★ K=10   z = 0.5700
+
+  Envelope points (★) and inter-point drops:
+    K=1    z = 6.3279
+    K=2    z = 3.4909   (Δ K=1→K=2: −44.8%)
+    K=3    z = 3.0499   (Δ K=2→K=3: −12.6%)
+    K=4    z = 1.8594   (Δ K=3→K=4: −39.0%)
+    K=5    z = 0.7174   (Δ K=4→K=5: −61.4%)
+    K=6    z = 0.6330   (Δ K=5→K=6: −11.8%)
+    K=8    z = 0.6240   (Δ K=6→K=8: −1.4%)
+    K=9    z = 0.6174   (Δ K=8→K=9: −1.1%)
+    K=10   z = 0.5700   (Δ K=9→K=10: −7.7%)
+  Last envelope K = 10   (z = 0.5700)
+
+──────────────────────────────────────────────────────────────────────
+Composition tables — BIC-best fits  (GT state → fitted-component %)
+Components sorted by total per-bin firing rate, low → high.
+──────────────────────────────────────────────────────────────────────
+
+  K=1   (components C1=quietest, C1=burstiest)
+    GT state       C1   total
+    silent     100.0%    4165 bins
+    chaotic    100.0%    3726 bins
+    up         100.0%    4631 bins
+    burst_a    100.0%    3934 bins
+    burst_b    100.0%    3544 bins
+    rate Σλ:     13.0    (sum λ per bin)
+
+  K=2   (components C1=quietest, C2=burstiest)
+    GT state       C1     C2   total
+    silent     100.0%   0.0%    4165 bins
+    chaotic      1.7%  98.3%    3726 bins
+    up          94.6%   5.4%    4631 bins
+    burst_a      0.0% 100.0%    3934 bins
+    burst_b    100.0%   0.0%    3544 bins
+    rate Σλ:      9.3   19.4    (sum λ per bin)
+
+  K=3   (components C1=quietest, C3=burstiest)
+    GT state       C1     C2     C3   total
+    silent     100.0%   0.0%   0.0%    4165 bins
+    chaotic      0.6%   0.2%  99.2%    3726 bins
+    up           0.4%  94.3%   5.3%    4631 bins
+    burst_a      0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      2.1   15.2   19.3    (sum λ per bin)
+
+  K=4   (components C1=quietest, C4=burstiest)
+    GT state       C1     C2     C3     C4   total
+    silent     100.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.2%   0.5%  98.7%   0.5%    4631 bins
+    burst_a      0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      1.9   13.2   15.1   24.6    (sum λ per bin)
+
+  K=5   (components C1=quietest, C5=burstiest)
+    GT state       C1     C2     C3     C4     C5   total
+    silent     100.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%  99.7%   0.0%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.1%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.6   12.9   13.3   17.4   25.0    (sum λ per bin)
+
+  K=6   (components C1=quietest, C6=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6   total
+    silent      99.6%   0.3%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%  99.7%   0.0%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.1%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    5.1   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=7   (components C1=quietest, C7=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7   total
+    silent      99.3%   0.5%   0.1%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.1%   0.0%  99.7%   0.0%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      0.9    4.5    5.8   13.4   13.6   17.5   25.0    (sum λ per bin)
+
+  K=8   (components C1=quietest, C8=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8   total
+    silent      99.2%   0.6%   0.1%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.1%   0.0%  58.8%   0.0%  40.9%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      0.9    4.5    5.8   12.3   13.6   14.9   17.5   25.0    (sum λ per bin)
+
+  K=9   (components C1=quietest, C9=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9   total
+    silent      99.3%   0.5%   0.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0%  40.2%  59.7%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.1%   0.0%  59.0%   0.1%   0.0%  40.6%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%   0.0%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      0.9    4.5    5.8   12.3   12.5   14.3   14.9   17.5   25.0    (sum λ per bin)
+
+  K=10   (components C1=quietest, C10=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9    C10   total
+    silent      99.0%   0.6%   0.2%   0.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.4%   0.0%   0.0%  99.6%   0.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.0%  59.7%   0.0%  39.9%   0.2%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%  56.4%  43.6%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.1%   0.0%   0.1%  99.9%   0.0%   0.0%    3544 bins
+    rate Σλ:      0.9    4.2    5.8    5.8   12.4   13.8   14.9   17.5   22.1   28.6    (sum λ per bin)
+
+──────────────────────────────────────────────────────────────────────
+Composition tables — ACDC-KL-best fits  (GT state → fitted-component %)
+Components sorted by total per-bin firing rate, low → high.
+──────────────────────────────────────────────────────────────────────
+
+  K=1   (components C1=quietest, C1=burstiest)
+    GT state       C1   total
+    silent     100.0%    4165 bins
+    chaotic    100.0%    3726 bins
+    up         100.0%    4631 bins
+    burst_a    100.0%    3934 bins
+    burst_b    100.0%    3544 bins
+    rate Σλ:     13.0    (sum λ per bin)
+
+  K=2   (components C1=quietest, C2=burstiest)
+    GT state       C1     C2   total
+    silent     100.0%   0.0%    4165 bins
+    chaotic      1.7%  98.3%    3726 bins
+    up          94.6%   5.4%    4631 bins
+    burst_a      0.0% 100.0%    3934 bins
+    burst_b    100.0%   0.0%    3544 bins
+    rate Σλ:      9.3   19.4    (sum λ per bin)
+
+  K=3   (components C1=quietest, C3=burstiest)
+    GT state       C1     C2     C3   total
+    silent     100.0%   0.0%   0.0%    4165 bins
+    chaotic      0.6%   0.2%  99.2%    3726 bins
+    up           0.4%  94.3%   5.3%    4631 bins
+    burst_a      0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      2.1   15.2   19.3    (sum λ per bin)
+
+  K=4   (components C1=quietest, C4=burstiest)
+    GT state       C1     C2     C3     C4   total
+    silent     100.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.2%   0.5%  98.7%   0.5%    4631 bins
+    burst_a      0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0% 100.0%   0.0%    3544 bins
+    rate Σλ:      1.9   13.2   15.1   24.6    (sum λ per bin)
+
+  K=5   (components C1=quietest, C5=burstiest)
+    GT state       C1     C2     C3     C4     C5   total
+    silent     100.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%  99.7%   0.0%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.1%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.6   12.9   13.3   17.4   25.0    (sum λ per bin)
+
+  K=6   (components C1=quietest, C6=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6   total
+    silent      99.6%   0.3%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0% 100.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%  99.7%   0.0%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.1%   0.0%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    5.1   13.4   13.4   17.5   25.0    (sum λ per bin)
+
+  K=7   (components C1=quietest, C7=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7   total
+    silent      99.6%   0.4%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.1%  57.4%   0.1%  42.3%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.1%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      1.0    5.1   12.0   13.4   15.2   17.5   25.0    (sum λ per bin)
+
+  K=8   (components C1=quietest, C8=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8   total
+    silent      99.2%   0.6%   0.1%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.1%   0.0%  58.0%   0.0%  41.6%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.1%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      0.9    4.5    5.8   12.3   13.6   14.9   17.5   25.0    (sum λ per bin)
+
+  K=9   (components C1=quietest, C9=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9   total
+    silent      99.1%   0.5%   0.2%   0.1%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.0%   0.4%   0.0%   0.0%  99.6%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.0%   0.0%   0.0%  56.1%   0.0%  43.6%   0.2%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 100.0%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.1%   0.0%   0.1%  99.9%   0.0%    3544 bins
+    rate Σλ:      0.9    4.2    5.8    5.8   12.3   13.8   14.9   17.5   25.0    (sum λ per bin)
+
+  K=10   (components C1=quietest, C10=burstiest)
+    GT state       C1     C2     C3     C4     C5     C6     C7     C8     C9    C10   total
+    silent      99.1%   0.7%   0.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%    4165 bins
+    chaotic      0.0%   0.1%   0.0%   0.0%  99.9%   0.0%   0.0%   0.0%   0.0%   0.0%    3726 bins
+    up           0.0%   0.1%   0.0%  59.8%   0.0%  39.8%   0.1%   0.0%   0.1%   0.0%    4631 bins
+    burst_a      0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%  55.6%  44.4%    3934 bins
+    burst_b      0.0%   0.0%   0.0%   0.0%   0.0%   0.1%  69.6%  30.3%   0.0%   0.0%    3544 bins
+    rate Σλ:      0.9    4.5    5.8   12.4   13.6   14.9   16.1   19.9   21.9   28.8    (sum λ per bin)
+
+======================================================================
