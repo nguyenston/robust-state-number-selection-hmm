@@ -1,8 +1,10 @@
 # Robust State-Number Selection in Hidden Markov Models
 
-Paper-focused analysis repository. Existing notebooks and Julia runners are
-kept separate from the StateSpaceDynamics package; no new experiments or
-selection algorithms are introduced by this reorganization.
+Analysis workflows and generated figures for the
+[manuscript](paper/manuscript.pdf), covering elephant movement, spike trains,
+and dog behavior. The notebooks and Julia runners are kept separate from the
+StateSpaceDynamics package, which is pinned as a Git submodule. This repository
+contains the paper workflows, not additional experiments.
 
 ```text
 .
@@ -23,14 +25,29 @@ selection algorithms are introduced by this reorganization.
 
 ## Setup and execution
 
-Install [Git LFS](https://git-lfs.com/) and run `git lfs install` before cloning.
+Install [Git LFS](https://git-lfs.com/) before cloning:
+
+```sh
+git lfs install
+git clone --recurse-submodules https://github.com/nguyenston/robust-state-number-selection-hmm.git
+cd robust-state-number-selection-hmm
+git lfs pull
+```
+
 On Nix, enter `nix-shell -p git-lfs` to make the LFS command available for Git
 operations without a global installation.
-Clone with `git clone --recurse-submodules <repository-url>`, or initialize an
-existing clone with `git submodule update --init --recursive`. In the repository
-root, run `git lfs pull` to fetch the bundled dog raw-timestep CSV (approximately
-2 GB). The small dog label-lookup CSV is stored in ordinary Git. The submodule
-uses HTTPS and does not require a GitHub SSH key for public cloning.
+For an existing clone, run `git submodule update --init --recursive` and
+`git lfs pull` from the repository root. The bundled dog raw-timestep CSV is
+approximately 2 GB and is stored in Git LFS; the small dog label-lookup CSV is
+stored in ordinary Git. The submodule uses HTTPS and does not require a GitHub
+SSH key for public cloning.
+
+The spike-train workflow generates its synthetic input. The dog workflow uses
+the two bundled CSVs. Before running the elephant notebook, obtain the external
+GPS input and place it at
+`notebooks/data/movement-syndrome-vertebrate-taxa-gps.csv` as described in the
+[data instructions](notebooks/data/README.md), including provenance and data
+licensing.
 
 Use Julia 1.12 with the recorded analysis environment:
 
@@ -52,6 +69,8 @@ processed dog CSVs are included; other local datasets and model caches are not
 committed.
 Move `notebooks/cache/` aside before running to force a fresh refit.
 
+## Validation
+
 Fresh-refit validation completed successfully on November 6, 2026 using Julia
 1.12.7. All pre-existing study caches and outputs were moved aside. All 18
 elephant notebook code cells and both study workflows completed, regenerating
@@ -65,9 +84,12 @@ See the [validation details](notebooks/README.md#validation) for execution
 settings and scope. This validates the paper workflows with the local datasets,
 not the entire package test suite or data acquisition on a clean machine.
 
-## Local publication status
+## Package version and license
 
-This research repository is still local and has no GitHub remote yet. The
-submodule's pinned commit, `642089f`, is published on the package fork's
-`codex/paper-reproduction` branch. A clean recursive clone successfully fetched
-that exact revision from GitHub.
+The StateSpaceDynamics submodule is pinned to
+[`642089f`](https://github.com/nguyenston/StateSpaceDynamics.jl/commit/642089f4e23b1236073335a0b246b1ec03247243)
+on the package fork's `codex/paper-reproduction` branch. Keep the recorded
+submodule revision and notebook environment when reproducing the paper.
+
+Code is distributed under [GPL-3.0](LICENSE). Dataset licensing and attribution
+are described separately in the [data instructions](notebooks/data/README.md).
