@@ -12,7 +12,7 @@ selection algorithms are introduced by this reorganization.
 │   ├── run_spike_trains.jl
 │   ├── run_dog_bouthmm.jl
 │   ├── helpers/
-│   ├── data/                # Local inputs; raw datasets ignored
+│   ├── data/                # Bundled dog CSVs; other inputs kept locally
 │   ├── cache/               # Local caches; ignored
 │   ├── figures/             # Main and supplementary figure panels
 │   ├── results/             # Numerical summaries
@@ -23,8 +23,14 @@ selection algorithms are introduced by this reorganization.
 
 ## Setup and execution
 
+Install [Git LFS](https://git-lfs.com/) and run `git lfs install` before cloning.
+On Nix, enter `nix-shell -p git-lfs` to make the LFS command available for Git
+operations without a global installation.
 Clone with `git clone --recurse-submodules <repository-url>`, or initialize an
-existing clone with `git submodule update --init --recursive`.
+existing clone with `git submodule update --init --recursive`. In the repository
+root, run `git lfs pull` to fetch the bundled dog raw-timestep CSV (approximately
+2 GB). The small dog label-lookup CSV is stored in ordinary Git. The submodule
+uses HTTPS and does not require a GitHub SSH key for public cloning.
 
 Use Julia 1.12 with the recorded analysis environment:
 
@@ -41,16 +47,27 @@ unchanged.
 
 See [notebook documentation](notebooks/README.md) for the paper figure map,
 experiment settings, and validation scope, and [data instructions](notebooks/data/README.md)
-for required external datasets. Raw data and model caches are not committed.
+for dataset provenance and the required external elephant GPS input. The two
+processed dog CSVs are included; other local datasets and model caches are not
+committed.
 Move `notebooks/cache/` aside before running to force a fresh refit.
 
-The retained outputs passed the previous cached end-to-end run. The subsequent
-uncached run was interrupted for this repository reorganization and is not a
-completed validation. A fresh end-to-end run in this layout is still pending.
+Fresh-refit validation completed successfully on November 6, 2026 using Julia
+1.12.7. All pre-existing study caches and outputs were moved aside. All 18
+elephant notebook code cells and both study workflows completed, regenerating
+22 PDF/PNG figure pairs and four numerical summaries. All 200 spike fits and
+280 dog fits succeeded; all three movement sweeps produced valid best fits at
+every K. The independent higher-K dog fits were parallelized using the existing
+helper, and the unchanged runner freshly evaluated all 280 fits and exported
+the results. No pre-existing fitted-model or selection-analysis cache was used.
+
+See the [validation details](notebooks/README.md#validation) for execution
+settings and scope. This validates the paper workflows with the local datasets,
+not the entire package test suite or data acquisition on a clean machine.
 
 ## Local publication status
 
-This repository was initialized locally; it has no GitHub remote yet. The
-package submodule includes a local snapshot commit of the existing package and
-test changes. That commit must be pushed to the package fork before publishing
-this repository, so that recursive clones can retrieve the pinned revision.
+This research repository is still local and has no GitHub remote yet. The
+submodule's pinned commit, `642089f`, is published on the package fork's
+`codex/paper-reproduction` branch. A clean recursive clone successfully fetched
+that exact revision from GitHub.

@@ -15,7 +15,7 @@ notebooks/
 ├── Project.toml
 ├── Manifest.toml
 ├── helpers/                 # Existing experiment and plotting implementations
-├── data/                    # Local datasets; see data/README.md
+├── data/                    # Bundled dog CSVs and local inputs; see data/README.md
 ├── cache/                   # Local fitted-model and analysis caches; ignored
 ├── figures/main/            # Figure panels used in the main paper
 ├── figures/supplementary/   # Figure panels used in the supplement
@@ -111,22 +111,38 @@ or add an automatic percentage-cutoff rule.
 
 ## Caches and existing outputs
 
-Existing local caches were moved with their filenames unchanged. The runners
-still use those caches by default. The cached analysis file in the dog workflow
+The runners use caches by default when present. The analysis file in the dog workflow
 and the generated-data caches in the spike workflow retain their original
 loading behavior. To force a complete refit or regeneration, move the relevant
 study cache directory aside before executing that workflow. Cache files do not
 fully encode every analysis parameter, so use a fresh cache when changing the
 experiment settings.
 
-The figures and numerical summaries were cleared and regenerated in an
-end-to-end check: all 18 elephant notebook code cells and both study runners
-completed successfully, producing 22 PDF/PNG figure pairs and four text
-summaries. The elephant notebook ran in a Julia 1.12.7 Jupyter kernel; the
-spike and dog runners used Julia 1.13.1. Existing fitted-model caches were
-retained, including the dog's cached selection analysis, so this checks data
-loading and complete output generation, not a cold refit or a clean-machine
-installation. Output directories are created automatically when absent.
+## Validation
+
+On November 6, 2026, all pre-existing caches, figures, and summaries were moved
+aside before a fresh-refit check in this repository. All 18 elephant notebook
+code cells and both study workflows completed successfully, producing 22
+PDF/PNG figure pairs and four text summaries. Checkpoint audits verified 24
+movement best-fit models, 200 successful spike fits, and 280 successful dog
+fits, with finite fitted log-likelihoods throughout. The fresh dog analysis
+evaluated all 280 fits, with finite BIC/ICL and best-per-K discrepancies.
+
+All workflows used Julia 1.12.7 and `OPENBLAS_NUM_THREADS=1`. The elephant
+notebook ran in a Jupyter Julia kernel. Dog K=1–9 fitting used eight Julia
+threads; independent K=10–14 fits used two-thread worker processes calling the
+unchanged fitting helper with the original seeds, 20 restarts, 200-iteration
+limit, and tolerance. Only fully written fresh checkpoints were passed to the
+unchanged dog runner for fresh selection analysis and output generation. No
+pre-existing fitted models or selection-analysis results were reused. The
+temporary execution/audit harnesses are not part of the repository; the study
+source code and experiment settings were not changed.
+
+This checks complete refitting and output generation with the local input
+datasets, not the full package test suite or a clean-machine installation/data
+acquisition. Fitting and discrepancy estimation retain their original random
+number handling, so regenerated figures are not guaranteed to be byte-identical
+to earlier runs. Output directories are created automatically when absent.
 The repository notebook keeps its saved cell outputs cleared.
 
 See [envelope plots](docs/envelope_plots.md) and

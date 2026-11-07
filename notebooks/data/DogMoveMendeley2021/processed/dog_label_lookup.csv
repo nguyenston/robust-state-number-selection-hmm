@@ -1,0 +1,1554 @@
+trial_index,dog_id,test_num,label_key,code,label
+1,16,1,Task,0,Task none
+1,16,1,Task,1,Task walk
+1,16,1,Task,2,Task sit
+1,16,1,Task,3,Task trot
+1,16,1,Task,4,Task lie down
+1,16,1,Task,5,Task play
+1,16,1,Task,6,Task stand
+1,16,1,Task,7,Task treat-search
+1,16,1,Behavior,0,Behavior none
+1,16,1,Behavior,1,Synchronization
+1,16,1,Behavior,2,Walking
+1,16,1,Behavior,3,Shaking
+1,16,1,Behavior,4,Sniffing
+1,16,1,Behavior,5,Eating
+1,16,1,Behavior,6,Sitting
+1,16,1,Behavior,7,Trotting
+1,16,1,Behavior,8,Pacing
+1,16,1,Behavior,9,Lying chest
+1,16,1,Behavior,10,Jumping
+1,16,1,Behavior,11,Tugging
+1,16,1,Behavior,12,Galloping
+1,16,1,Behavior,13,Playing
+1,16,1,Behavior,14,Carrying object
+1,16,1,Behavior,15,Standing
+1,16,1,Behavior,16,Panting
+2,16,2,Task,0,Task none
+2,16,2,Task,1,Task play
+2,16,2,Task,2,Task stand
+2,16,2,Task,3,Task walk
+2,16,2,Task,4,Task sit
+2,16,2,Task,5,Task trot
+2,16,2,Task,6,Task lie down
+2,16,2,Task,7,Task treat-search
+2,16,2,Behavior,0,Behavior none
+2,16,2,Behavior,1,Synchronization
+2,16,2,Behavior,2,Shaking
+2,16,2,Behavior,3,Jumping
+2,16,2,Behavior,4,Tugging
+2,16,2,Behavior,5,Playing
+2,16,2,Behavior,6,Galloping
+2,16,2,Behavior,7,Carrying object
+2,16,2,Behavior,8,Trotting
+2,16,2,Behavior,9,Eating
+2,16,2,Behavior,10,Panting
+2,16,2,Behavior,11,Standing
+2,16,2,Behavior,12,Sniffing
+2,16,2,Behavior,13,Walking
+2,16,2,Behavior,14,Sitting
+2,16,2,Behavior,15,Pacing
+2,16,2,Behavior,16,Lying chest
+3,18,1,Task,0,Task none
+3,18,1,Task,1,Task walk
+3,18,1,Task,2,Task sit
+3,18,1,Task,3,Task trot
+3,18,1,Task,4,Task lie down
+3,18,1,Task,5,Task play
+3,18,1,Task,6,Task stand
+3,18,1,Task,7,Task treat-search
+3,18,1,Behavior,0,Behavior none
+3,18,1,Behavior,1,Shaking
+3,18,1,Behavior,2,Synchronization
+3,18,1,Behavior,3,Walking
+3,18,1,Behavior,4,Panting
+3,18,1,Behavior,5,Standing
+3,18,1,Behavior,6,Sitting
+3,18,1,Behavior,7,Pacing
+3,18,1,Behavior,8,Trotting
+3,18,1,Behavior,9,Drinking
+3,18,1,Behavior,10,Lying chest
+3,18,1,Behavior,11,Jumping
+3,18,1,Behavior,12,Galloping
+3,18,1,Behavior,13,Carrying object
+3,18,1,Behavior,14,Tugging
+3,18,1,Behavior,15,Playing
+3,18,1,Behavior,16,Sniffing
+4,19,2,Task,0,Task none
+4,19,2,Task,1,Task trot
+4,19,2,Task,2,Task sit
+4,19,2,Task,3,Task walk
+4,19,2,Task,4,Task stand
+4,19,2,Task,5,Task play
+4,19,2,Task,6,Task lie down
+4,19,2,Task,7,Task treat-search
+4,19,2,Behavior,0,Behavior none
+4,19,2,Behavior,1,Synchronization
+4,19,2,Behavior,2,Pacing
+4,19,2,Behavior,3,Shaking
+4,19,2,Behavior,4,Galloping
+4,19,2,Behavior,5,Panting
+4,19,2,Behavior,6,Eating
+4,19,2,Behavior,7,Sitting
+4,19,2,Behavior,8,Walking
+4,19,2,Behavior,9,Standing
+4,19,2,Behavior,10,Sniffing
+4,19,2,Behavior,11,Tugging
+4,19,2,Behavior,12,Playing
+4,19,2,Behavior,13,Carrying object
+4,19,2,Behavior,14,Jumping
+4,19,2,Behavior,15,Trotting
+4,19,2,Behavior,16,Lying chest
+4,19,2,Behavior,17,Drinking
+5,20,1,Task,0,Task none
+5,20,1,Task,1,Task trot
+5,20,1,Task,2,Task sit
+5,20,1,Task,3,Task walk
+5,20,1,Task,4,Task stand
+5,20,1,Task,5,Task play
+5,20,1,Task,6,Task lie down
+5,20,1,Task,7,Task treat-search
+5,20,1,Behavior,0,Behavior none
+5,20,1,Behavior,1,Synchronization
+5,20,1,Behavior,2,Shaking
+5,20,1,Behavior,3,Galloping
+5,20,1,Behavior,4,Trotting
+5,20,1,Behavior,5,Pacing
+5,20,1,Behavior,6,Panting
+5,20,1,Behavior,7,Eating
+5,20,1,Behavior,8,Sitting
+5,20,1,Behavior,9,Walking
+5,20,1,Behavior,10,Standing
+5,20,1,Behavior,11,Tugging
+5,20,1,Behavior,12,Carrying object
+5,20,1,Behavior,13,Jumping
+5,20,1,Behavior,14,Lying chest
+5,20,1,Behavior,15,Bowing
+5,20,1,Behavior,16,Playing
+5,20,1,Behavior,17,Drinking
+5,20,1,Behavior,18,Sniffing
+6,21,1,Task,0,Task none
+6,21,1,Task,1,Task trot
+6,21,1,Task,2,Task lie down
+6,21,1,Task,3,Task play
+6,21,1,Task,4,Task stand
+6,21,1,Task,5,Task walk
+6,21,1,Task,6,Task sit
+6,21,1,Task,7,Task treat-search
+6,21,1,Behavior,0,Behavior none
+6,21,1,Behavior,1,Synchronization
+6,21,1,Behavior,2,Eating
+6,21,1,Behavior,3,Trotting
+6,21,1,Behavior,4,Shaking
+6,21,1,Behavior,5,Panting
+6,21,1,Behavior,6,Lying chest
+6,21,1,Behavior,7,Galloping
+6,21,1,Behavior,8,Carrying object
+6,21,1,Behavior,9,Playing
+6,21,1,Behavior,10,Jumping
+6,21,1,Behavior,11,Tugging
+6,21,1,Behavior,12,Drinking
+6,21,1,Behavior,13,Standing
+6,21,1,Behavior,14,Sitting
+6,21,1,Behavior,15,Walking
+6,21,1,Behavior,16,Sniffing
+7,22,2,Task,0,Task none
+7,22,2,Task,1,Task play
+7,22,2,Task,2,Task stand
+7,22,2,Task,3,Task walk
+7,22,2,Task,4,Task sit
+7,22,2,Task,5,Task trot
+7,22,2,Task,6,Task lie down
+7,22,2,Task,7,Task treat-search
+7,22,2,Behavior,0,Behavior none
+7,22,2,Behavior,1,Synchronization
+7,22,2,Behavior,2,Tugging
+7,22,2,Behavior,3,Jumping
+7,22,2,Behavior,4,Carrying object
+7,22,2,Behavior,5,Playing
+7,22,2,Behavior,6,Galloping
+7,22,2,Behavior,7,Trotting
+7,22,2,Behavior,8,Walking
+7,22,2,Behavior,9,Drinking
+7,22,2,Behavior,10,Eating
+7,22,2,Behavior,11,Panting
+7,22,2,Behavior,12,Standing
+7,22,2,Behavior,13,Lying chest
+7,22,2,Behavior,14,Pacing
+7,22,2,Behavior,15,Shaking
+7,22,2,Behavior,16,Sniffing
+7,22,2,Behavior,17,Sitting
+8,23,1,Task,0,Task none
+8,23,1,Task,1,Task trot
+8,23,1,Task,2,Task lie down
+8,23,1,Task,3,Task play
+8,23,1,Task,4,Task stand
+8,23,1,Task,5,Task walk
+8,23,1,Task,6,Task sit
+8,23,1,Task,7,Task treat-search
+8,23,1,Behavior,0,Behavior none
+8,23,1,Behavior,1,Synchronization
+8,23,1,Behavior,2,Extra_Synchronization
+8,23,1,Behavior,3,Trotting
+8,23,1,Behavior,4,Pacing
+8,23,1,Behavior,5,Eating
+8,23,1,Behavior,6,Panting
+8,23,1,Behavior,7,Lying chest
+8,23,1,Behavior,8,Galloping
+8,23,1,Behavior,9,Carrying object
+8,23,1,Behavior,10,Jumping
+8,23,1,Behavior,11,Playing
+8,23,1,Behavior,12,Tugging
+8,23,1,Behavior,13,Standing
+8,23,1,Behavior,14,Sitting
+8,23,1,Behavior,15,Walking
+8,23,1,Behavior,16,Shaking
+8,23,1,Behavior,17,Sniffing
+9,23,2,Task,0,Task none
+9,23,2,Task,1,Task play
+9,23,2,Task,2,Task stand
+9,23,2,Task,3,Task walk
+9,23,2,Task,4,Task sit
+9,23,2,Task,5,Task trot
+9,23,2,Task,6,Task lie down
+9,23,2,Task,7,Task treat-search
+9,23,2,Behavior,0,Behavior none
+9,23,2,Behavior,1,Synchronization
+9,23,2,Behavior,2,Playing
+9,23,2,Behavior,3,Carrying object
+9,23,2,Behavior,4,Trotting
+9,23,2,Behavior,5,Jumping
+9,23,2,Behavior,6,Galloping
+9,23,2,Behavior,7,Panting
+9,23,2,Behavior,8,Standing
+9,23,2,Behavior,9,Eating
+9,23,2,Behavior,10,Walking
+9,23,2,Behavior,11,Sitting
+9,23,2,Behavior,12,Pacing
+9,23,2,Behavior,13,Tugging
+9,23,2,Behavior,14,Lying chest
+9,23,2,Behavior,15,Shaking
+9,23,2,Behavior,16,Sniffing
+10,25,1,Task,0,Task none
+10,25,1,Task,1,Task play
+10,25,1,Task,2,Task stand
+10,25,1,Task,3,Task walk
+10,25,1,Task,4,Task sit
+10,25,1,Task,5,Task trot
+10,25,1,Task,6,Task lie down
+10,25,1,Task,7,Task treat-search
+10,25,1,Behavior,0,Behavior none
+10,25,1,Behavior,1,Synchronization
+10,25,1,Behavior,2,Shaking
+10,25,1,Behavior,3,Galloping
+10,25,1,Behavior,4,Jumping
+10,25,1,Behavior,5,Playing
+10,25,1,Behavior,6,Panting
+10,25,1,Behavior,7,Standing
+10,25,1,Behavior,8,Carrying object
+10,25,1,Behavior,9,Sniffing
+10,25,1,Behavior,10,Walking
+10,25,1,Behavior,11,Tugging
+10,25,1,Behavior,12,Trotting
+10,25,1,Behavior,13,Sitting
+10,25,1,Behavior,14,Eating
+10,25,1,Behavior,15,Lying chest
+11,25,2,Task,0,Task none
+11,25,2,Task,1,Task walk
+11,25,2,Task,2,Task sit
+11,25,2,Task,3,Task trot
+11,25,2,Task,4,Task lie down
+11,25,2,Task,5,Task play
+11,25,2,Task,6,Task stand
+11,25,2,Task,7,Task treat-search
+11,25,2,Behavior,0,Behavior none
+11,25,2,Behavior,1,Synchronization
+11,25,2,Behavior,2,Shaking
+11,25,2,Behavior,3,Walking
+11,25,2,Behavior,4,Panting
+11,25,2,Behavior,5,Standing
+11,25,2,Behavior,6,Trotting
+11,25,2,Behavior,7,Sniffing
+11,25,2,Behavior,8,Sitting
+11,25,2,Behavior,9,Lying chest
+11,25,2,Behavior,10,Eating
+11,25,2,Behavior,11,Galloping
+11,25,2,Behavior,12,Drinking
+11,25,2,Behavior,13,Playing
+11,25,2,Behavior,14,Jumping
+11,25,2,Behavior,15,Carrying object
+12,26,1,Task,0,Task none
+12,26,1,Task,1,Task walk
+12,26,1,Task,2,Task sit
+12,26,1,Task,3,Task trot
+12,26,1,Task,4,Task lie down
+12,26,1,Task,5,Task play
+12,26,1,Task,6,Task stand
+12,26,1,Task,7,Task treat-search
+12,26,1,Behavior,0,Behavior none
+12,26,1,Behavior,1,Synchronization
+12,26,1,Behavior,2,Walking
+12,26,1,Behavior,3,Shaking
+12,26,1,Behavior,4,Trotting
+12,26,1,Behavior,5,Sniffing
+12,26,1,Behavior,6,Panting
+12,26,1,Behavior,7,Eating
+12,26,1,Behavior,8,Sitting
+12,26,1,Behavior,9,Pacing
+12,26,1,Behavior,10,Drinking
+12,26,1,Behavior,11,Lying chest
+12,26,1,Behavior,12,Jumping
+12,26,1,Behavior,13,Galloping
+12,26,1,Behavior,14,Playing
+12,26,1,Behavior,15,Carrying object
+12,26,1,Behavior,16,Standing
+13,26,2,Task,0,Task none
+13,26,2,Task,1,Task trot
+13,26,2,Task,2,Task sit
+13,26,2,Task,3,Task walk
+13,26,2,Task,4,Task stand
+13,26,2,Task,5,Task play
+13,26,2,Task,6,Task lie down
+13,26,2,Task,7,Task treat-search
+13,26,2,Behavior,0,Behavior none
+13,26,2,Behavior,1,Synchronization
+13,26,2,Behavior,2,Trotting
+13,26,2,Behavior,3,Eating
+13,26,2,Behavior,4,Walking
+13,26,2,Behavior,5,Shaking
+13,26,2,Behavior,6,Panting
+13,26,2,Behavior,7,Sitting
+13,26,2,Behavior,8,Standing
+13,26,2,Behavior,9,Sniffing
+13,26,2,Behavior,10,Playing
+13,26,2,Behavior,11,Galloping
+13,26,2,Behavior,12,Carrying object
+13,26,2,Behavior,13,Jumping
+13,26,2,Behavior,14,Lying chest
+14,27,1,Task,0,Task none
+14,27,1,Task,1,Task trot
+14,27,1,Task,2,Task sit
+14,27,1,Task,3,Task walk
+14,27,1,Task,4,Task stand
+14,27,1,Task,5,Task play
+14,27,1,Task,6,Task lie down
+14,27,1,Task,7,Task treat-search
+14,27,1,Behavior,0,Behavior none
+14,27,1,Behavior,1,Synchronization
+14,27,1,Behavior,2,Shaking
+14,27,1,Behavior,3,Trotting
+14,27,1,Behavior,4,Pacing
+14,27,1,Behavior,5,Panting
+14,27,1,Behavior,6,Sitting
+14,27,1,Behavior,7,Lying chest
+14,27,1,Behavior,8,Eating
+14,27,1,Behavior,9,Walking
+14,27,1,Behavior,10,Standing
+14,27,1,Behavior,11,Jumping
+14,27,1,Behavior,12,Galloping
+14,27,1,Behavior,13,Carrying object
+14,27,1,Behavior,14,Playing
+14,27,1,Behavior,15,Tugging
+14,27,1,Behavior,16,Sniffing
+15,27,2,Task,0,Task none
+15,27,2,Task,1,Task walk
+15,27,2,Task,2,Task sit
+15,27,2,Task,3,Task trot
+15,27,2,Task,4,Task lie down
+15,27,2,Task,5,Task play
+15,27,2,Task,6,Task stand
+15,27,2,Task,7,Task treat-search
+15,27,2,Behavior,0,Behavior none
+15,27,2,Behavior,1,Synchronization
+15,27,2,Behavior,2,Walking
+15,27,2,Behavior,3,Eating
+15,27,2,Behavior,4,Pacing
+15,27,2,Behavior,5,Panting
+15,27,2,Behavior,6,Standing
+15,27,2,Behavior,7,Sitting
+15,27,2,Behavior,8,Lying chest
+15,27,2,Behavior,9,Trotting
+15,27,2,Behavior,10,Jumping
+15,27,2,Behavior,11,Tugging
+15,27,2,Behavior,12,Carrying object
+15,27,2,Behavior,13,Galloping
+15,27,2,Behavior,14,Playing
+15,27,2,Behavior,15,Shaking
+15,27,2,Behavior,16,Sniffing
+16,28,1,Task,0,Task none
+16,28,1,Task,1,Task play
+16,28,1,Task,2,Task stand
+16,28,1,Task,3,Task walk
+16,28,1,Task,4,Task sit
+16,28,1,Task,5,Task trot
+16,28,1,Task,6,Task lie down
+16,28,1,Task,7,Task treat-search
+16,28,1,Behavior,0,Behavior none
+16,28,1,Behavior,1,Synchronization
+16,28,1,Behavior,2,Jumping
+16,28,1,Behavior,3,Playing
+16,28,1,Behavior,4,Tugging
+16,28,1,Behavior,5,Galloping
+16,28,1,Behavior,6,Carrying object
+16,28,1,Behavior,7,Trotting
+16,28,1,Behavior,8,Eating
+16,28,1,Behavior,9,Standing
+16,28,1,Behavior,10,Panting
+16,28,1,Behavior,11,Shaking
+16,28,1,Behavior,12,Walking
+16,28,1,Behavior,13,Sitting
+16,28,1,Behavior,14,Pacing
+16,28,1,Behavior,15,Lying chest
+16,28,1,Behavior,16,Sniffing
+17,29,1,Task,0,Task none
+17,29,1,Task,1,Task trot
+17,29,1,Task,2,Task sit
+17,29,1,Task,3,Task walk
+17,29,1,Task,4,Task stand
+17,29,1,Task,5,Task play
+17,29,1,Task,6,Task lie down
+17,29,1,Task,7,Task treat-search
+17,29,1,Behavior,0,Behavior none
+17,29,1,Behavior,1,Synchronization
+17,29,1,Behavior,2,Shaking
+17,29,1,Behavior,3,Trotting
+17,29,1,Behavior,4,Walking
+17,29,1,Behavior,5,Sitting
+17,29,1,Behavior,6,Panting
+17,29,1,Behavior,7,Eating
+17,29,1,Behavior,8,Standing
+17,29,1,Behavior,9,Jumping
+17,29,1,Behavior,10,Galloping
+17,29,1,Behavior,11,Carrying object
+17,29,1,Behavior,12,Playing
+17,29,1,Behavior,13,Tugging
+17,29,1,Behavior,14,Sniffing
+17,29,1,Behavior,15,Lying chest
+18,29,2,Task,0,Task none
+18,29,2,Task,1,Task play
+18,29,2,Task,2,Task stand
+18,29,2,Task,3,Task walk
+18,29,2,Task,4,Task sit
+18,29,2,Task,5,Task trot
+18,29,2,Task,6,Task lie down
+18,29,2,Task,7,Task treat-search
+18,29,2,Behavior,0,Behavior none
+18,29,2,Behavior,1,Synchronization
+18,29,2,Behavior,2,Jumping
+18,29,2,Behavior,3,Galloping
+18,29,2,Behavior,4,Carrying object
+18,29,2,Behavior,5,Trotting
+18,29,2,Behavior,6,Playing
+18,29,2,Behavior,7,Tugging
+18,29,2,Behavior,8,Shaking
+18,29,2,Behavior,9,Walking
+18,29,2,Behavior,10,Eating
+18,29,2,Behavior,11,Standing
+18,29,2,Behavior,12,Panting
+18,29,2,Behavior,13,Sitting
+18,29,2,Behavior,14,Sniffing
+18,29,2,Behavior,15,Pacing
+18,29,2,Behavior,16,Lying chest
+19,30,1,Task,0,Task none
+19,30,1,Task,1,Task trot
+19,30,1,Task,2,Task sit
+19,30,1,Task,3,Task walk
+19,30,1,Task,4,Task stand
+19,30,1,Task,5,Task play
+19,30,1,Task,6,Task lie down
+19,30,1,Task,7,Task treat-search
+19,30,1,Behavior,0,Behavior none
+19,30,1,Behavior,1,Synchronization
+19,30,1,Behavior,2,Trotting
+19,30,1,Behavior,3,Shaking
+19,30,1,Behavior,4,Walking
+19,30,1,Behavior,5,Sniffing
+19,30,1,Behavior,6,Eating
+19,30,1,Behavior,7,Standing
+19,30,1,Behavior,8,Lying chest
+19,30,1,Behavior,9,Sitting
+19,30,1,Behavior,10,Playing
+19,30,1,Behavior,11,Tugging
+19,30,1,Behavior,12,Galloping
+19,30,1,Behavior,13,Carrying object
+19,30,1,Behavior,14,Jumping
+19,30,1,Behavior,15,Panting
+19,30,1,Behavior,16,Drinking
+20,30,2,Task,0,Task none
+20,30,2,Task,1,Task play
+20,30,2,Task,2,Task stand
+20,30,2,Task,3,Task walk
+20,30,2,Task,4,Task sit
+20,30,2,Task,5,Task trot
+20,30,2,Task,6,Task lie down
+20,30,2,Task,7,Task treat-search
+20,30,2,Behavior,0,Behavior none
+20,30,2,Behavior,1,Synchronization
+20,30,2,Behavior,2,Trotting
+20,30,2,Behavior,3,Tugging
+20,30,2,Behavior,4,Playing
+20,30,2,Behavior,5,Galloping
+20,30,2,Behavior,6,Carrying object
+20,30,2,Behavior,7,Walking
+20,30,2,Behavior,8,Standing
+20,30,2,Behavior,9,Eating
+20,30,2,Behavior,10,Shaking
+20,30,2,Behavior,11,Jumping
+20,30,2,Behavior,12,Sitting
+20,30,2,Behavior,13,Sniffing
+20,30,2,Behavior,14,Lying chest
+21,33,1,Task,0,Task none
+21,33,1,Task,1,Task trot
+21,33,1,Task,2,Task sit
+21,33,1,Task,3,Task walk
+21,33,1,Task,4,Task stand
+21,33,1,Task,5,Task play
+21,33,1,Task,6,Task lie down
+21,33,1,Task,7,Task treat-search
+21,33,1,Behavior,0,Behavior none
+21,33,1,Behavior,1,Synchronization
+21,33,1,Behavior,2,Shaking
+21,33,1,Behavior,3,Trotting
+21,33,1,Behavior,4,Eating
+21,33,1,Behavior,5,Walking
+21,33,1,Behavior,6,Panting
+21,33,1,Behavior,7,Sitting
+21,33,1,Behavior,8,Standing
+21,33,1,Behavior,9,Sniffing
+21,33,1,Behavior,10,Jumping
+21,33,1,Behavior,11,Playing
+21,33,1,Behavior,12,Tugging
+21,33,1,Behavior,13,Carrying object
+21,33,1,Behavior,14,Lying chest
+22,34,1,Task,0,Task none
+22,34,1,Task,1,Task play
+22,34,1,Task,2,Task stand
+22,34,1,Task,3,Task walk
+22,34,1,Task,4,Task sit
+22,34,1,Task,5,Task trot
+22,34,1,Task,6,Task lie down
+22,34,1,Task,7,Task treat-search
+22,34,1,Behavior,0,Behavior none
+22,34,1,Behavior,1,Synchronization
+22,34,1,Behavior,2,Jumping
+22,34,1,Behavior,3,Shaking
+22,34,1,Behavior,4,Galloping
+22,34,1,Behavior,5,Bowing
+22,34,1,Behavior,6,Carrying object
+22,34,1,Behavior,7,Standing
+22,34,1,Behavior,8,Playing
+22,34,1,Behavior,9,Panting
+22,34,1,Behavior,10,Trotting
+22,34,1,Behavior,11,Eating
+22,34,1,Behavior,12,Sitting
+22,34,1,Behavior,13,Walking
+22,34,1,Behavior,14,Pacing
+22,34,1,Behavior,15,Drinking
+22,34,1,Behavior,16,Lying chest
+22,34,1,Behavior,17,Sniffing
+23,34,2,Task,0,Task none
+23,34,2,Task,1,Task trot
+23,34,2,Task,2,Task sit
+23,34,2,Task,3,Task walk
+23,34,2,Task,4,Task stand
+23,34,2,Task,5,Task play
+23,34,2,Task,6,Task lie down
+23,34,2,Task,7,Task treat-search
+23,34,2,Behavior,0,Behavior none
+23,34,2,Behavior,1,Synchronization
+23,34,2,Behavior,2,Trotting
+23,34,2,Behavior,3,Shaking
+23,34,2,Behavior,4,Sitting
+23,34,2,Behavior,5,Eating
+23,34,2,Behavior,6,Walking
+23,34,2,Behavior,7,Sniffing
+23,34,2,Behavior,8,Standing
+23,34,2,Behavior,9,Tugging
+23,34,2,Behavior,10,Jumping
+23,34,2,Behavior,11,Galloping
+23,34,2,Behavior,12,Carrying object
+23,34,2,Behavior,13,Playing
+23,34,2,Behavior,14,Panting
+23,34,2,Behavior,15,Lying chest
+24,36,1,Task,0,Task none
+24,36,1,Task,1,Task trot
+24,36,1,Task,2,Task lie down
+24,36,1,Task,3,Task play
+24,36,1,Task,4,Task stand
+24,36,1,Task,5,Task walk
+24,36,1,Task,6,Task sit
+24,36,1,Task,7,Task treat-search
+24,36,1,Behavior,0,Behavior none
+24,36,1,Behavior,1,Synchronization
+24,36,1,Behavior,2,Trotting
+24,36,1,Behavior,3,Panting
+24,36,1,Behavior,4,Lying chest
+24,36,1,Behavior,5,Eating
+24,36,1,Behavior,6,Playing
+24,36,1,Behavior,7,Standing
+24,36,1,Behavior,8,Carrying object
+24,36,1,Behavior,9,Galloping
+24,36,1,Behavior,10,Jumping
+24,36,1,Behavior,11,Sitting
+24,36,1,Behavior,12,Sniffing
+24,36,1,Behavior,13,Walking
+24,36,1,Behavior,14,Shaking
+24,36,1,Behavior,15,Pacing
+25,39,1,Task,0,Task none
+25,39,1,Task,1,Task walk
+25,39,1,Task,2,Task sit
+25,39,1,Task,3,Task trot
+25,39,1,Task,4,Task lie down
+25,39,1,Task,5,Task play
+25,39,1,Task,6,Task stand
+25,39,1,Task,7,Task treat-search
+25,39,1,Behavior,0,Behavior none
+25,39,1,Behavior,1,Synchronization
+25,39,1,Behavior,2,Shaking
+25,39,1,Behavior,3,Walking
+25,39,1,Behavior,4,Sniffing
+25,39,1,Behavior,5,Eating
+25,39,1,Behavior,6,Panting
+25,39,1,Behavior,7,Sitting
+25,39,1,Behavior,8,Trotting
+25,39,1,Behavior,9,Lying chest
+25,39,1,Behavior,10,Tugging
+25,39,1,Behavior,11,Galloping
+25,39,1,Behavior,12,Carrying object
+25,39,1,Behavior,13,Playing
+25,39,1,Behavior,14,Jumping
+25,39,1,Behavior,15,Bowing
+25,39,1,Behavior,16,Drinking
+25,39,1,Behavior,17,Standing
+26,39,2,Task,0,Task none
+26,39,2,Task,1,Task play
+26,39,2,Task,2,Task stand
+26,39,2,Task,3,Task walk
+26,39,2,Task,4,Task sit
+26,39,2,Task,5,Task trot
+26,39,2,Task,6,Task lie down
+26,39,2,Task,7,Task treat-search
+26,39,2,Behavior,0,Behavior none
+26,39,2,Behavior,1,Synchronization
+26,39,2,Behavior,2,Shaking
+26,39,2,Behavior,3,Tugging
+26,39,2,Behavior,4,Playing
+26,39,2,Behavior,5,Eating
+26,39,2,Behavior,6,Lying chest
+26,39,2,Behavior,7,Carrying object
+26,39,2,Behavior,8,Galloping
+26,39,2,Behavior,9,Panting
+26,39,2,Behavior,10,Standing
+26,39,2,Behavior,11,Sitting
+26,39,2,Behavior,12,Drinking
+26,39,2,Behavior,13,Walking
+26,39,2,Behavior,14,Trotting
+26,39,2,Behavior,15,Sniffing
+27,41,1,Task,0,Task none
+27,41,1,Task,1,Task trot
+27,41,1,Task,2,Task lie down
+27,41,1,Task,3,Task play
+27,41,1,Task,4,Task stand
+27,41,1,Task,5,Task walk
+27,41,1,Task,6,Task sit
+27,41,1,Task,7,Task treat-search
+27,41,1,Behavior,0,Behavior none
+27,41,1,Behavior,1,Synchronization
+27,41,1,Behavior,2,Shaking
+27,41,1,Behavior,3,Trotting
+27,41,1,Behavior,4,Lying chest
+27,41,1,Behavior,5,Panting
+27,41,1,Behavior,6,Eating
+27,41,1,Behavior,7,Galloping
+27,41,1,Behavior,8,Carrying object
+27,41,1,Behavior,9,Playing
+27,41,1,Behavior,10,Standing
+27,41,1,Behavior,11,Jumping
+27,41,1,Behavior,12,Tugging
+27,41,1,Behavior,13,Drinking
+27,41,1,Behavior,14,Pacing
+27,41,1,Behavior,15,Walking
+27,41,1,Behavior,16,Sitting
+27,41,1,Behavior,17,Sniffing
+28,41,2,Task,0,Task none
+28,41,2,Task,1,Task play
+28,41,2,Task,2,Task stand
+28,41,2,Task,3,Task walk
+28,41,2,Task,4,Task sit
+28,41,2,Task,5,Task trot
+28,41,2,Task,6,Task lie down
+28,41,2,Task,7,Task treat-search
+28,41,2,Behavior,0,Behavior none
+28,41,2,Behavior,1,Synchronization
+28,41,2,Behavior,2,Galloping
+28,41,2,Behavior,3,Carrying object
+28,41,2,Behavior,4,Playing
+28,41,2,Behavior,5,Trotting
+28,41,2,Behavior,6,Shaking
+28,41,2,Behavior,7,Panting
+28,41,2,Behavior,8,Standing
+28,41,2,Behavior,9,Jumping
+28,41,2,Behavior,10,Tugging
+28,41,2,Behavior,11,Drinking
+28,41,2,Behavior,12,Eating
+28,41,2,Behavior,13,Walking
+28,41,2,Behavior,14,Pacing
+28,41,2,Behavior,15,Sitting
+28,41,2,Behavior,16,Lying chest
+28,41,2,Behavior,17,Sniffing
+29,43,1,Task,0,Task none
+29,43,1,Task,1,Task play
+29,43,1,Task,2,Task stand
+29,43,1,Task,3,Task walk
+29,43,1,Task,4,Task sit
+29,43,1,Task,5,Task trot
+29,43,1,Task,6,Task lie down
+29,43,1,Task,7,Task treat-search
+29,43,1,Behavior,0,Behavior none
+29,43,1,Behavior,1,Synchronization
+29,43,1,Behavior,2,Shaking
+29,43,1,Behavior,3,Galloping
+29,43,1,Behavior,4,Playing
+29,43,1,Behavior,5,Carrying object
+29,43,1,Behavior,6,Tugging
+29,43,1,Behavior,7,Jumping
+29,43,1,Behavior,8,Trotting
+29,43,1,Behavior,9,Panting
+29,43,1,Behavior,10,Standing
+29,43,1,Behavior,11,Walking
+29,43,1,Behavior,12,Sniffing
+29,43,1,Behavior,13,Sitting
+29,43,1,Behavior,14,Lying chest
+29,43,1,Behavior,15,Drinking
+30,43,2,Task,0,Task none
+30,43,2,Task,1,Task walk
+30,43,2,Task,2,Task sit
+30,43,2,Task,3,Task trot
+30,43,2,Task,4,Task lie down
+30,43,2,Task,5,Task play
+30,43,2,Task,6,Task stand
+30,43,2,Task,7,Task treat-search
+30,43,2,Behavior,0,Behavior none
+30,43,2,Behavior,1,Synchronization
+30,43,2,Behavior,2,Shaking
+30,43,2,Behavior,3,Walking
+30,43,2,Behavior,4,Sniffing
+30,43,2,Behavior,5,Eating
+30,43,2,Behavior,6,Panting
+30,43,2,Behavior,7,Sitting
+30,43,2,Behavior,8,Trotting
+30,43,2,Behavior,9,Lying chest
+30,43,2,Behavior,10,Jumping
+30,43,2,Behavior,11,Galloping
+30,43,2,Behavior,12,Playing
+30,43,2,Behavior,13,Carrying object
+30,43,2,Behavior,14,Tugging
+30,43,2,Behavior,15,Standing
+31,44,1,Task,0,Task none
+31,44,1,Task,1,Task trot
+31,44,1,Task,2,Task lie down
+31,44,1,Task,3,Task walk
+31,44,1,Task,4,Task stand
+31,44,1,Task,5,Task play
+31,44,1,Task,6,Task sit
+31,44,1,Task,7,Task treat-search
+31,44,1,Behavior,0,Behavior none
+31,44,1,Behavior,1,Synchronization
+31,44,1,Behavior,2,Trotting
+31,44,1,Behavior,3,Shaking
+31,44,1,Behavior,4,Standing
+31,44,1,Behavior,5,Pacing
+31,44,1,Behavior,6,Walking
+31,44,1,Behavior,7,Galloping
+31,44,1,Behavior,8,Lying chest
+31,44,1,Behavior,9,Eating
+31,44,1,Behavior,10,Sniffing
+31,44,1,Behavior,11,Panting
+31,44,1,Behavior,12,Sitting
+31,44,1,Behavior,13,Jumping
+31,44,1,Behavior,14,Playing
+31,44,1,Behavior,15,Drinking
+32,45,1,Task,0,Task none
+32,45,1,Task,1,Task walk
+32,45,1,Task,2,Task sit
+32,45,1,Task,3,Task play
+32,45,1,Task,4,Task lie down
+32,45,1,Task,5,Task trot
+32,45,1,Task,6,Task stand
+32,45,1,Task,7,Task treat-search
+32,45,1,Behavior,0,Behavior none
+32,45,1,Behavior,1,Synchronization
+32,45,1,Behavior,2,Walking
+32,45,1,Behavior,3,Sitting
+32,45,1,Behavior,4,Eating
+32,45,1,Behavior,5,Jumping
+32,45,1,Behavior,6,Galloping
+32,45,1,Behavior,7,Carrying object
+32,45,1,Behavior,8,Tugging
+32,45,1,Behavior,9,Shaking
+32,45,1,Behavior,10,Playing
+32,45,1,Behavior,11,Standing
+32,45,1,Behavior,12,Panting
+32,45,1,Behavior,13,Lying chest
+32,45,1,Behavior,14,Trotting
+32,45,1,Behavior,15,Sniffing
+33,45,2,Task,0,Task none
+33,45,2,Task,1,Task play
+33,45,2,Task,2,Task stand
+33,45,2,Task,3,Task trot
+33,45,2,Task,4,Task sit
+33,45,2,Task,5,Task walk
+33,45,2,Task,6,Task lie down
+33,45,2,Task,7,Task treat-search
+33,45,2,Behavior,0,Behavior none
+33,45,2,Behavior,1,Synchronization
+33,45,2,Behavior,2,Jumping
+33,45,2,Behavior,3,Galloping
+33,45,2,Behavior,4,Carrying object
+33,45,2,Behavior,5,Playing
+33,45,2,Behavior,6,Shaking
+33,45,2,Behavior,7,Tugging
+33,45,2,Behavior,8,Panting
+33,45,2,Behavior,9,Standing
+33,45,2,Behavior,10,Trotting
+33,45,2,Behavior,11,Drinking
+33,45,2,Behavior,12,Eating
+33,45,2,Behavior,13,Sitting
+33,45,2,Behavior,14,Walking
+33,45,2,Behavior,15,Sniffing
+33,45,2,Behavior,16,Pacing
+33,45,2,Behavior,17,Lying chest
+34,46,1,Task,0,Task none
+34,46,1,Task,1,Task trot
+34,46,1,Task,2,Task lie down
+34,46,1,Task,3,Task walk
+34,46,1,Task,4,Task stand
+34,46,1,Task,5,Task play
+34,46,1,Task,6,Task sit
+34,46,1,Task,7,Task treat-search
+34,46,1,Behavior,0,Behavior none
+34,46,1,Behavior,1,Synchronization
+34,46,1,Behavior,2,Trotting
+34,46,1,Behavior,3,Shaking
+34,46,1,Behavior,4,Pacing
+34,46,1,Behavior,5,Panting
+34,46,1,Behavior,6,Eating
+34,46,1,Behavior,7,Lying chest
+34,46,1,Behavior,8,Walking
+34,46,1,Behavior,9,Sniffing
+34,46,1,Behavior,10,Standing
+34,46,1,Behavior,11,Galloping
+34,46,1,Behavior,12,Jumping
+34,46,1,Behavior,13,Playing
+34,46,1,Behavior,14,Sitting
+35,46,2,Task,0,Task none
+35,46,2,Task,1,Task play
+35,46,2,Task,2,Task stand
+35,46,2,Task,3,Task trot
+35,46,2,Task,4,Task sit
+35,46,2,Task,5,Task walk
+35,46,2,Task,6,Task lie down
+35,46,2,Task,7,Task treat-search
+35,46,2,Behavior,0,Behavior none
+35,46,2,Behavior,1,Synchronization
+35,46,2,Behavior,2,Shaking
+35,46,2,Behavior,3,Jumping
+35,46,2,Behavior,4,Tugging
+35,46,2,Behavior,5,Galloping
+35,46,2,Behavior,6,Playing
+35,46,2,Behavior,7,Panting
+35,46,2,Behavior,8,Standing
+35,46,2,Behavior,9,Sitting
+35,46,2,Behavior,10,Walking
+35,46,2,Behavior,11,Sniffing
+35,46,2,Behavior,12,Trotting
+35,46,2,Behavior,13,Eating
+35,46,2,Behavior,14,Lying chest
+36,47,1,Task,0,Task none
+36,47,1,Task,1,Task play
+36,47,1,Task,2,Task stand
+36,47,1,Task,3,Task trot
+36,47,1,Task,4,Task sit
+36,47,1,Task,5,Task walk
+36,47,1,Task,6,Task lie down
+36,47,1,Task,7,Task treat-search
+36,47,1,Behavior,0,Behavior none
+36,47,1,Behavior,1,Synchronization
+36,47,1,Behavior,2,Shaking
+36,47,1,Behavior,3,Galloping
+36,47,1,Behavior,4,Carrying object
+36,47,1,Behavior,5,Jumping
+36,47,1,Behavior,6,Trotting
+36,47,1,Behavior,7,Tugging
+36,47,1,Behavior,8,Playing
+36,47,1,Behavior,9,Walking
+36,47,1,Behavior,10,Drinking
+36,47,1,Behavior,11,Eating
+36,47,1,Behavior,12,Panting
+36,47,1,Behavior,13,Standing
+36,47,1,Behavior,14,Sitting
+36,47,1,Behavior,15,Pacing
+36,47,1,Behavior,16,Lying chest
+36,47,1,Behavior,17,Sniffing
+37,47,2,Task,0,Task none
+37,47,2,Task,1,Task trot
+37,47,2,Task,2,Task lie down
+37,47,2,Task,3,Task walk
+37,47,2,Task,4,Task stand
+37,47,2,Task,5,Task play
+37,47,2,Task,6,Task sit
+37,47,2,Task,7,Task treat-search
+37,47,2,Behavior,0,Behavior none
+37,47,2,Behavior,1,Shaking
+37,47,2,Behavior,2,Synchronization
+37,47,2,Behavior,3,Trotting
+37,47,2,Behavior,4,Eating
+37,47,2,Behavior,5,Lying chest
+37,47,2,Behavior,6,Bowing
+37,47,2,Behavior,7,Panting
+37,47,2,Behavior,8,Walking
+37,47,2,Behavior,9,Standing
+37,47,2,Behavior,10,Sitting
+37,47,2,Behavior,11,Jumping
+37,47,2,Behavior,12,Galloping
+37,47,2,Behavior,13,Carrying object
+37,47,2,Behavior,14,Playing
+37,47,2,Behavior,15,Tugging
+37,47,2,Behavior,16,Drinking
+37,47,2,Behavior,17,Sniffing
+38,48,1,Task,0,Task none
+38,48,1,Task,1,Task play
+38,48,1,Task,2,Task stand
+38,48,1,Task,3,Task trot
+38,48,1,Task,4,Task sit
+38,48,1,Task,5,Task walk
+38,48,1,Task,6,Task lie down
+38,48,1,Task,7,Task treat-search
+38,48,1,Behavior,0,Behavior none
+38,48,1,Behavior,1,Synchronization
+38,48,1,Behavior,2,Jumping
+38,48,1,Behavior,3,Galloping
+38,48,1,Behavior,4,Carrying object
+38,48,1,Behavior,5,Tugging
+38,48,1,Behavior,6,Playing
+38,48,1,Behavior,7,Lying chest
+38,48,1,Behavior,8,Shaking
+38,48,1,Behavior,9,Drinking
+38,48,1,Behavior,10,Panting
+38,48,1,Behavior,11,Standing
+38,48,1,Behavior,12,Sniffing
+38,48,1,Behavior,13,Trotting
+38,48,1,Behavior,14,Pacing
+38,48,1,Behavior,15,Walking
+38,48,1,Behavior,16,Sitting
+39,48,2,Task,0,Task none
+39,48,2,Task,1,Task trot
+39,48,2,Task,2,Task lie down
+39,48,2,Task,3,Task walk
+39,48,2,Task,4,Task stand
+39,48,2,Task,5,Task play
+39,48,2,Task,6,Task sit
+39,48,2,Task,7,Task treat-search
+39,48,2,Behavior,0,Behavior none
+39,48,2,Behavior,1,Synchronization
+39,48,2,Behavior,2,Walking
+39,48,2,Behavior,3,Trotting
+39,48,2,Behavior,4,Shaking
+39,48,2,Behavior,5,Pacing
+39,48,2,Behavior,6,Lying chest
+39,48,2,Behavior,7,Panting
+39,48,2,Behavior,8,Standing
+39,48,2,Behavior,9,Galloping
+39,48,2,Behavior,10,Carrying object
+39,48,2,Behavior,11,Tugging
+39,48,2,Behavior,12,Jumping
+39,48,2,Behavior,13,Playing
+39,48,2,Behavior,14,Sitting
+39,48,2,Behavior,15,Sniffing
+40,49,1,Task,0,Task none
+40,49,1,Task,1,Task play
+40,49,1,Task,2,Task stand
+40,49,1,Task,3,Task trot
+40,49,1,Task,4,Task sit
+40,49,1,Task,5,Task walk
+40,49,1,Task,6,Task lie down
+40,49,1,Task,7,Task treat-search
+40,49,1,Behavior,0,Behavior none
+40,49,1,Behavior,1,Synchronization
+40,49,1,Behavior,2,Pacing
+40,49,1,Behavior,3,Playing
+40,49,1,Behavior,4,Shaking
+40,49,1,Behavior,5,Jumping
+40,49,1,Behavior,6,Galloping
+40,49,1,Behavior,7,Carrying object
+40,49,1,Behavior,8,Bowing
+40,49,1,Behavior,9,Trotting
+40,49,1,Behavior,10,Standing
+40,49,1,Behavior,11,Panting
+40,49,1,Behavior,12,Eating
+40,49,1,Behavior,13,Sniffing
+40,49,1,Behavior,14,Drinking
+40,49,1,Behavior,15,Sitting
+40,49,1,Behavior,16,Walking
+40,49,1,Behavior,17,Lying chest
+41,49,2,Task,0,Task none
+41,49,2,Task,1,Task trot
+41,49,2,Task,2,Task lie down
+41,49,2,Task,3,Task walk
+41,49,2,Task,4,Task stand
+41,49,2,Task,5,Task play
+41,49,2,Task,6,Task sit
+41,49,2,Task,7,Task treat-search
+41,49,2,Behavior,0,Behavior none
+41,49,2,Behavior,1,Synchronization
+41,49,2,Behavior,2,Trotting
+41,49,2,Behavior,3,Pacing
+41,49,2,Behavior,4,Shaking
+41,49,2,Behavior,5,Eating
+41,49,2,Behavior,6,Sniffing
+41,49,2,Behavior,7,Walking
+41,49,2,Behavior,8,Standing
+41,49,2,Behavior,9,Lying chest
+41,49,2,Behavior,10,Panting
+41,49,2,Behavior,11,Galloping
+41,49,2,Behavior,12,Carrying object
+41,49,2,Behavior,13,Playing
+41,49,2,Behavior,14,Jumping
+41,49,2,Behavior,15,Sitting
+41,49,2,Behavior,16,Drinking
+42,51,1,Task,0,Task none
+42,51,1,Task,1,Task walk
+42,51,1,Task,2,Task sit
+42,51,1,Task,3,Task play
+42,51,1,Task,4,Task lie down
+42,51,1,Task,5,Task trot
+42,51,1,Task,6,Task stand
+42,51,1,Task,7,Task treat-search
+42,51,1,Behavior,0,Behavior none
+42,51,1,Behavior,1,Synchronization
+42,51,1,Behavior,2,Sniffing
+42,51,1,Behavior,3,Trotting
+42,51,1,Behavior,4,Shaking
+42,51,1,Behavior,5,Panting
+42,51,1,Behavior,6,Standing
+42,51,1,Behavior,7,Walking
+42,51,1,Behavior,8,Eating
+42,51,1,Behavior,9,Sitting
+42,51,1,Behavior,10,Carrying object
+42,51,1,Behavior,11,Galloping
+42,51,1,Behavior,12,Playing
+42,51,1,Behavior,13,Tugging
+42,51,1,Behavior,14,Jumping
+42,51,1,Behavior,15,Lying chest
+42,51,1,Behavior,16,Drinking
+43,52,1,Task,0,Task none
+43,52,1,Task,1,Task trot
+43,52,1,Task,2,Task lie down
+43,52,1,Task,3,Task walk
+43,52,1,Task,4,Task stand
+43,52,1,Task,5,Task play
+43,52,1,Task,6,Task sit
+43,52,1,Task,7,Task treat-search
+43,52,1,Behavior,0,Behavior none
+43,52,1,Behavior,1,Synchronization
+43,52,1,Behavior,2,Trotting
+43,52,1,Behavior,3,Shaking
+43,52,1,Behavior,4,Pacing
+43,52,1,Behavior,5,Eating
+43,52,1,Behavior,6,Panting
+43,52,1,Behavior,7,Lying chest
+43,52,1,Behavior,8,Walking
+43,52,1,Behavior,9,Sniffing
+43,52,1,Behavior,10,Standing
+43,52,1,Behavior,11,Jumping
+43,52,1,Behavior,12,Playing
+43,52,1,Behavior,13,Tugging
+43,52,1,Behavior,14,Galloping
+43,52,1,Behavior,15,Carrying object
+43,52,1,Behavior,16,Bowing
+43,52,1,Behavior,17,Sitting
+43,52,1,Behavior,18,Drinking
+44,53,1,Task,0,Task none
+44,53,1,Task,1,Task play
+44,53,1,Task,2,Task stand
+44,53,1,Task,3,Task trot
+44,53,1,Task,4,Task sit
+44,53,1,Task,5,Task walk
+44,53,1,Task,6,Task lie down
+44,53,1,Task,7,Task treat-search
+44,53,1,Behavior,0,Behavior none
+44,53,1,Behavior,1,Synchronization
+44,53,1,Behavior,2,Shaking
+44,53,1,Behavior,3,Tugging
+44,53,1,Behavior,4,Galloping
+44,53,1,Behavior,5,Carrying object
+44,53,1,Behavior,6,Jumping
+44,53,1,Behavior,7,Playing
+44,53,1,Behavior,8,Sitting
+44,53,1,Behavior,9,Trotting
+44,53,1,Behavior,10,Pacing
+44,53,1,Behavior,11,Panting
+44,53,1,Behavior,12,Eating
+44,53,1,Behavior,13,Standing
+44,53,1,Behavior,14,Walking
+44,53,1,Behavior,15,Drinking
+44,53,1,Behavior,16,Lying chest
+44,53,1,Behavior,17,Sniffing
+45,54,1,Task,0,Task none
+45,54,1,Task,1,Task play
+45,54,1,Task,2,Task stand
+45,54,1,Task,3,Task trot
+45,54,1,Task,4,Task sit
+45,54,1,Task,5,Task walk
+45,54,1,Task,6,Task lie down
+45,54,1,Task,7,Task treat-search
+45,54,1,Behavior,0,Behavior none
+45,54,1,Behavior,1,Synchronization
+45,54,1,Behavior,2,Jumping
+45,54,1,Behavior,3,Tugging
+45,54,1,Behavior,4,Carrying object
+45,54,1,Behavior,5,Galloping
+45,54,1,Behavior,6,Trotting
+45,54,1,Behavior,7,Playing
+45,54,1,Behavior,8,Shaking
+45,54,1,Behavior,9,Panting
+45,54,1,Behavior,10,Standing
+45,54,1,Behavior,11,Sitting
+45,54,1,Behavior,12,Eating
+45,54,1,Behavior,13,Pacing
+45,54,1,Behavior,14,Drinking
+45,54,1,Behavior,15,Lying chest
+45,54,1,Behavior,16,Sniffing
+45,54,1,Behavior,17,Walking
+46,55,1,Task,0,Task none
+46,55,1,Task,1,Task trot
+46,55,1,Task,2,Task lie down
+46,55,1,Task,3,Task walk
+46,55,1,Task,4,Task stand
+46,55,1,Task,5,Task play
+46,55,1,Task,6,Task sit
+46,55,1,Task,7,Task treat-search
+46,55,1,Behavior,0,Behavior none
+46,55,1,Behavior,1,Synchronization
+46,55,1,Behavior,2,Trotting
+46,55,1,Behavior,3,Pacing
+46,55,1,Behavior,4,Lying chest
+46,55,1,Behavior,5,Eating
+46,55,1,Behavior,6,Shaking
+46,55,1,Behavior,7,Walking
+46,55,1,Behavior,8,Standing
+46,55,1,Behavior,9,Tugging
+46,55,1,Behavior,10,Jumping
+46,55,1,Behavior,11,Galloping
+46,55,1,Behavior,12,Carrying object
+46,55,1,Behavior,13,Playing
+46,55,1,Behavior,14,Sniffing
+46,55,1,Behavior,15,Drinking
+46,55,1,Behavior,16,Panting
+46,55,1,Behavior,17,Sitting
+47,56,1,Task,0,Task none
+47,56,1,Task,1,Task walk
+47,56,1,Task,2,Task sit
+47,56,1,Task,3,Task play
+47,56,1,Task,4,Task lie down
+47,56,1,Task,5,Task trot
+47,56,1,Task,6,Task stand
+47,56,1,Task,7,Task treat-search
+47,56,1,Behavior,0,Behavior none
+47,56,1,Behavior,1,Synchronization
+47,56,1,Behavior,2,Shaking
+47,56,1,Behavior,3,Trotting
+47,56,1,Behavior,4,Walking
+47,56,1,Behavior,5,Sniffing
+47,56,1,Behavior,6,Eating
+47,56,1,Behavior,7,Pacing
+47,56,1,Behavior,8,Panting
+47,56,1,Behavior,9,Sitting
+47,56,1,Behavior,10,Galloping
+47,56,1,Behavior,11,Carrying object
+47,56,1,Behavior,12,Playing
+47,56,1,Behavior,13,Jumping
+47,56,1,Behavior,14,Tugging
+47,56,1,Behavior,15,Lying chest
+47,56,1,Behavior,16,Drinking
+47,56,1,Behavior,17,Standing
+48,57,1,Task,0,Task none
+48,57,1,Task,1,Task trot
+48,57,1,Task,2,Task lie down
+48,57,1,Task,3,Task walk
+48,57,1,Task,4,Task stand
+48,57,1,Task,5,Task play
+48,57,1,Task,6,Task sit
+48,57,1,Task,7,Task treat-search
+48,57,1,Behavior,0,Behavior none
+48,57,1,Behavior,1,Synchronization
+48,57,1,Behavior,2,Trotting
+48,57,1,Behavior,3,Shaking
+48,57,1,Behavior,4,Pacing
+48,57,1,Behavior,5,Lying chest
+48,57,1,Behavior,6,Walking
+48,57,1,Behavior,7,Sniffing
+48,57,1,Behavior,8,Eating
+48,57,1,Behavior,9,Standing
+48,57,1,Behavior,10,Galloping
+48,57,1,Behavior,11,Carrying object
+48,57,1,Behavior,12,Playing
+48,57,1,Behavior,13,Jumping
+48,57,1,Behavior,14,Tugging
+48,57,1,Behavior,15,Drinking
+48,57,1,Behavior,16,Panting
+48,57,1,Behavior,17,Sitting
+49,58,2,Task,0,Task none
+49,58,2,Task,1,Task trot
+49,58,2,Task,2,Task lie down
+49,58,2,Task,3,Task walk
+49,58,2,Task,4,Task stand
+49,58,2,Task,5,Task play
+49,58,2,Task,6,Task sit
+49,58,2,Task,7,Task treat-search
+49,58,2,Behavior,0,Behavior none
+49,58,2,Behavior,1,Synchronization
+49,58,2,Behavior,2,Shaking
+49,58,2,Behavior,3,Trotting
+49,58,2,Behavior,4,Pacing
+49,58,2,Behavior,5,Eating
+49,58,2,Behavior,6,Drinking
+49,58,2,Behavior,7,Panting
+49,58,2,Behavior,8,Lying chest
+49,58,2,Behavior,9,Walking
+49,58,2,Behavior,10,Sniffing
+49,58,2,Behavior,11,Standing
+49,58,2,Behavior,12,Tugging
+49,58,2,Behavior,13,Jumping
+49,58,2,Behavior,14,Playing
+49,58,2,Behavior,15,Galloping
+49,58,2,Behavior,16,Carrying object
+49,58,2,Behavior,17,Sitting
+50,59,1,Task,0,Task none
+50,59,1,Task,1,Task walk
+50,59,1,Task,2,Task sit
+50,59,1,Task,3,Task play
+50,59,1,Task,4,Task lie down
+50,59,1,Task,5,Task trot
+50,59,1,Task,6,Task stand
+50,59,1,Task,7,Task treat-search
+50,59,1,Behavior,0,Behavior none
+50,59,1,Behavior,1,Synchronization
+50,59,1,Behavior,2,Walking
+50,59,1,Behavior,3,Eating
+50,59,1,Behavior,4,Shaking
+50,59,1,Behavior,5,Trotting
+50,59,1,Behavior,6,Sitting
+50,59,1,Behavior,7,Galloping
+50,59,1,Behavior,8,Playing
+50,59,1,Behavior,9,Standing
+50,59,1,Behavior,10,Carrying object
+50,59,1,Behavior,11,Jumping
+50,59,1,Behavior,12,Tugging
+50,59,1,Behavior,13,Bowing
+50,59,1,Behavior,14,Panting
+50,59,1,Behavior,15,Lying chest
+50,59,1,Behavior,16,Drinking
+50,59,1,Behavior,17,Sniffing
+51,60,1,Task,0,Task none
+51,60,1,Task,1,Task trot
+51,60,1,Task,2,Task lie down
+51,60,1,Task,3,Task walk
+51,60,1,Task,4,Task stand
+51,60,1,Task,5,Task play
+51,60,1,Task,6,Task sit
+51,60,1,Task,7,Task treat-search
+51,60,1,Behavior,0,Behavior none
+51,60,1,Behavior,1,Synchronization
+51,60,1,Behavior,2,Trotting
+51,60,1,Behavior,3,Carrying object
+51,60,1,Behavior,4,Tugging
+51,60,1,Behavior,5,Panting
+51,60,1,Behavior,6,Eating
+51,60,1,Behavior,7,Lying chest
+51,60,1,Behavior,8,Walking
+51,60,1,Behavior,9,Pacing
+51,60,1,Behavior,10,Standing
+51,60,1,Behavior,11,Jumping
+51,60,1,Behavior,12,Galloping
+51,60,1,Behavior,13,Playing
+51,60,1,Behavior,14,Shaking
+51,60,1,Behavior,15,Sitting
+51,60,1,Behavior,16,Sniffing
+52,61,1,Task,0,Task none
+52,61,1,Task,1,Task play
+52,61,1,Task,2,Task stand
+52,61,1,Task,3,Task trot
+52,61,1,Task,4,Task sit
+52,61,1,Task,5,Task walk
+52,61,1,Task,6,Task lie down
+52,61,1,Task,7,Task treat-search
+52,61,1,Behavior,0,Behavior none
+52,61,1,Behavior,1,Synchronization
+52,61,1,Behavior,2,Playing
+52,61,1,Behavior,3,Jumping
+52,61,1,Behavior,4,Tugging
+52,61,1,Behavior,5,Galloping
+52,61,1,Behavior,6,Carrying object
+52,61,1,Behavior,7,Shaking
+52,61,1,Behavior,8,Panting
+52,61,1,Behavior,9,Eating
+52,61,1,Behavior,10,Standing
+52,61,1,Behavior,11,Sniffing
+52,61,1,Behavior,12,Trotting
+52,61,1,Behavior,13,Drinking
+52,61,1,Behavior,14,Sitting
+52,61,1,Behavior,15,Walking
+52,61,1,Behavior,16,Lying chest
+53,63,2,Task,0,Task none
+53,63,2,Task,1,Task trot
+53,63,2,Task,2,Task lie down
+53,63,2,Task,3,Task walk
+53,63,2,Task,4,Task stand
+53,63,2,Task,5,Task play
+53,63,2,Task,6,Task sit
+53,63,2,Task,7,Task treat-search
+53,63,2,Behavior,0,Behavior none
+53,63,2,Behavior,1,Synchronization
+53,63,2,Behavior,2,Trotting
+53,63,2,Behavior,3,Shaking
+53,63,2,Behavior,4,Eating
+53,63,2,Behavior,5,Lying chest
+53,63,2,Behavior,6,Panting
+53,63,2,Behavior,7,Walking
+53,63,2,Behavior,8,Sniffing
+53,63,2,Behavior,9,Standing
+53,63,2,Behavior,10,Sitting
+53,63,2,Behavior,11,Galloping
+53,63,2,Behavior,12,Playing
+53,63,2,Behavior,13,Carrying object
+53,63,2,Behavior,14,Drinking
+54,65,1,Task,0,Task none
+54,65,1,Task,1,Task trot
+54,65,1,Task,2,Task lie down
+54,65,1,Task,3,Task walk
+54,65,1,Task,4,Task stand
+54,65,1,Task,5,Task play
+54,65,1,Task,6,Task sit
+54,65,1,Task,7,Task treat-search
+54,65,1,Behavior,0,Behavior none
+54,65,1,Behavior,1,Synchronization
+54,65,1,Behavior,2,Shaking
+54,65,1,Behavior,3,Trotting
+54,65,1,Behavior,4,Pacing
+54,65,1,Behavior,5,Panting
+54,65,1,Behavior,6,Lying chest
+54,65,1,Behavior,7,Walking
+54,65,1,Behavior,8,Standing
+54,65,1,Behavior,9,Eating
+54,65,1,Behavior,10,Tugging
+54,65,1,Behavior,11,Carrying object
+54,65,1,Behavior,12,Playing
+54,65,1,Behavior,13,Galloping
+54,65,1,Behavior,14,Jumping
+54,65,1,Behavior,15,Sitting
+54,65,1,Behavior,16,Sniffing
+55,66,2,Task,0,Task none
+55,66,2,Task,1,Task trot
+55,66,2,Task,2,Task lie down
+55,66,2,Task,3,Task walk
+55,66,2,Task,4,Task stand
+55,66,2,Task,5,Task play
+55,66,2,Task,6,Task sit
+55,66,2,Task,7,Task treat-search
+55,66,2,Behavior,0,Behavior none
+55,66,2,Behavior,1,Synchronization
+55,66,2,Behavior,2,Trotting
+55,66,2,Behavior,3,Eating
+55,66,2,Behavior,4,Lying chest
+55,66,2,Behavior,5,Panting
+55,66,2,Behavior,6,Walking
+55,66,2,Behavior,7,Sniffing
+55,66,2,Behavior,8,Shaking
+55,66,2,Behavior,9,Standing
+55,66,2,Behavior,10,Jumping
+55,66,2,Behavior,11,Galloping
+55,66,2,Behavior,12,Carrying object
+55,66,2,Behavior,13,Playing
+55,66,2,Behavior,14,Drinking
+55,66,2,Behavior,15,Sitting
+56,67,1,Task,0,Task none
+56,67,1,Task,1,Task play
+56,67,1,Task,2,Task stand
+56,67,1,Task,3,Task trot
+56,67,1,Task,4,Task sit
+56,67,1,Task,5,Task walk
+56,67,1,Task,6,Task lie down
+56,67,1,Task,7,Task treat-search
+56,67,1,Behavior,0,Behavior none
+56,67,1,Behavior,1,Synchronization
+56,67,1,Behavior,2,Shaking
+56,67,1,Behavior,3,Jumping
+56,67,1,Behavior,4,Playing
+56,67,1,Behavior,5,Tugging
+56,67,1,Behavior,6,Sniffing
+56,67,1,Behavior,7,Galloping
+56,67,1,Behavior,8,Carrying object
+56,67,1,Behavior,9,Trotting
+56,67,1,Behavior,10,Panting
+56,67,1,Behavior,11,Standing
+56,67,1,Behavior,12,Drinking
+56,67,1,Behavior,13,Eating
+56,67,1,Behavior,14,Sitting
+56,67,1,Behavior,15,Walking
+56,67,1,Behavior,16,Lying chest
+57,68,1,Task,0,Task none
+57,68,1,Task,1,Task trot
+57,68,1,Task,2,Task lie down
+57,68,1,Task,3,Task walk
+57,68,1,Task,4,Task stand
+57,68,1,Task,5,Task play
+57,68,1,Task,6,Task sit
+57,68,1,Task,7,Task treat-search
+57,68,1,Behavior,0,Behavior none
+57,68,1,Behavior,1,Synchronization
+57,68,1,Behavior,2,Shaking
+57,68,1,Behavior,3,Trotting
+57,68,1,Behavior,4,Sniffing
+57,68,1,Behavior,5,Pacing
+57,68,1,Behavior,6,Walking
+57,68,1,Behavior,7,Drinking
+57,68,1,Behavior,8,Panting
+57,68,1,Behavior,9,Eating
+57,68,1,Behavior,10,Lying chest
+57,68,1,Behavior,11,Standing
+57,68,1,Behavior,12,Playing
+57,68,1,Behavior,13,Galloping
+57,68,1,Behavior,14,Carrying object
+57,68,1,Behavior,15,Jumping
+57,68,1,Behavior,16,Tugging
+57,68,1,Behavior,17,Sitting
+58,70,1,Task,0,Task none
+58,70,1,Task,1,Task walk
+58,70,1,Task,2,Task sit
+58,70,1,Task,3,Task play
+58,70,1,Task,4,Task lie down
+58,70,1,Task,5,Task trot
+58,70,1,Task,6,Task stand
+58,70,1,Task,7,Task treat-search
+58,70,1,Behavior,0,Behavior none
+58,70,1,Behavior,1,Synchronization
+58,70,1,Behavior,2,Shaking
+58,70,1,Behavior,3,Walking
+58,70,1,Behavior,4,Panting
+58,70,1,Behavior,5,Sitting
+58,70,1,Behavior,6,Eating
+58,70,1,Behavior,7,Jumping
+58,70,1,Behavior,8,Galloping
+58,70,1,Behavior,9,Carrying object
+58,70,1,Behavior,10,Tugging
+58,70,1,Behavior,11,Playing
+58,70,1,Behavior,12,Standing
+58,70,1,Behavior,13,Drinking
+58,70,1,Behavior,14,Lying chest
+58,70,1,Behavior,15,Trotting
+58,70,1,Behavior,16,Pacing
+58,70,1,Behavior,17,Sniffing
+59,72,1,Task,0,Task none
+59,72,1,Task,1,Task walk
+59,72,1,Task,2,Task sit
+59,72,1,Task,3,Task play
+59,72,1,Task,4,Task lie down
+59,72,1,Task,5,Task trot
+59,72,1,Task,6,Task stand
+59,72,1,Task,7,Task treat-search
+59,72,1,Behavior,0,Behavior none
+59,72,1,Behavior,1,Synchronization
+59,72,1,Behavior,2,Shaking
+59,72,1,Behavior,3,Walking
+59,72,1,Behavior,4,Sniffing
+59,72,1,Behavior,5,Eating
+59,72,1,Behavior,6,Panting
+59,72,1,Behavior,7,Sitting
+59,72,1,Behavior,8,Lying chest
+59,72,1,Behavior,9,Jumping
+59,72,1,Behavior,10,Tugging
+59,72,1,Behavior,11,Trotting
+59,72,1,Behavior,12,Playing
+59,72,1,Behavior,13,Galloping
+59,72,1,Behavior,14,Carrying object
+59,72,1,Behavior,15,Pacing
+59,72,1,Behavior,16,Standing
+59,72,1,Behavior,17,Drinking
+60,73,1,Task,0,Task none
+60,73,1,Task,1,Task walk
+60,73,1,Task,2,Task sit
+60,73,1,Task,3,Task play
+60,73,1,Task,4,Task lie down
+60,73,1,Task,5,Task trot
+60,73,1,Task,6,Task stand
+60,73,1,Task,7,Task treat-search
+60,73,1,Behavior,0,Behavior none
+60,73,1,Behavior,1,Synchronization
+60,73,1,Behavior,2,Walking
+60,73,1,Behavior,3,Eating
+60,73,1,Behavior,4,Sniffing
+60,73,1,Behavior,5,Sitting
+60,73,1,Behavior,6,Panting
+60,73,1,Behavior,7,Shaking
+60,73,1,Behavior,8,Carrying object
+60,73,1,Behavior,9,Trotting
+60,73,1,Behavior,10,Galloping
+60,73,1,Behavior,11,Tugging
+60,73,1,Behavior,12,Playing
+60,73,1,Behavior,13,Jumping
+60,73,1,Behavior,14,Drinking
+60,73,1,Behavior,15,Lying chest
+60,73,1,Behavior,16,Standing
+61,74,1,Task,0,Task none
+61,74,1,Task,1,Task play
+61,74,1,Task,2,Task stand
+61,74,1,Task,3,Task trot
+61,74,1,Task,4,Task sit
+61,74,1,Task,5,Task walk
+61,74,1,Task,6,Task lie down
+61,74,1,Task,7,Task treat-search
+61,74,1,Behavior,0,Behavior none
+61,74,1,Behavior,1,Synchronization
+61,74,1,Behavior,2,Galloping
+61,74,1,Behavior,3,Carrying object
+61,74,1,Behavior,4,Tugging
+61,74,1,Behavior,5,Jumping
+61,74,1,Behavior,6,Playing
+61,74,1,Behavior,7,Standing
+61,74,1,Behavior,8,Shaking
+61,74,1,Behavior,9,Lying chest
+61,74,1,Behavior,10,Panting
+61,74,1,Behavior,11,Eating
+61,74,1,Behavior,12,Sitting
+61,74,1,Behavior,13,Trotting
+61,74,1,Behavior,14,Pacing
+61,74,1,Behavior,15,Drinking
+61,74,1,Behavior,16,Walking
+61,74,1,Behavior,17,Sniffing
+62,74,2,Task,0,Task none
+62,74,2,Task,1,Task walk
+62,74,2,Task,2,Task sit
+62,74,2,Task,3,Task play
+62,74,2,Task,4,Task lie down
+62,74,2,Task,5,Task trot
+62,74,2,Task,6,Task stand
+62,74,2,Task,7,Task treat-search
+62,74,2,Behavior,0,Behavior none
+62,74,2,Behavior,1,Synchronization
+62,74,2,Behavior,2,Shaking
+62,74,2,Behavior,3,Walking
+62,74,2,Behavior,4,Eating
+62,74,2,Behavior,5,Sniffing
+62,74,2,Behavior,6,Trotting
+62,74,2,Behavior,7,Panting
+62,74,2,Behavior,8,Sitting
+62,74,2,Behavior,9,Lying chest
+62,74,2,Behavior,10,Playing
+62,74,2,Behavior,11,Galloping
+62,74,2,Behavior,12,Carrying object
+62,74,2,Behavior,13,Tugging
+62,74,2,Behavior,14,Jumping
+62,74,2,Behavior,15,Drinking
+62,74,2,Behavior,16,Pacing
+62,74,2,Behavior,17,Standing
