@@ -17,8 +17,7 @@ contains the paper workflows, not additional experiments.
 │   ├── data/                # Bundled dog CSVs; other inputs kept locally
 │   ├── cache/               # Local caches; ignored
 │   ├── figures/             # Main and supplementary figure panels
-│   ├── results/             # Numerical summaries
-│   └── docs/
+│   └── results/             # Numerical summaries
 └── paper/
     └── manuscript.pdf       # Manuscript PDF only; LaTeX sources stay separate
 ```

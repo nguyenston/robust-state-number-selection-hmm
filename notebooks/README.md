@@ -14,20 +14,29 @@ notebooks/
 ├── run_dog_bouthmm.jl
 ├── Project.toml
 ├── Manifest.toml
-├── helpers/                 # Existing experiment and plotting implementations
+├── helpers/
+│   ├── AnimalMovementUtils.jl  # Movement module and includes
+│   ├── SpikeTrainHMMUtils.jl   # Spike module and includes
+│   ├── DogNotebookUtils.jl     # Dog module and includes
+│   ├── FigureExport.jl        # Existing PNG/PDF export and optional trimming
+│   ├── movement/              # Data, emissions, fitting, plots, statistics
+│   ├── spikes/                # Generation, emission, fitting, plots, statistics
+│   └── dogs/                  # Data, fitting, alignment, layout, plots, statistics
 ├── data/                    # Bundled dog CSVs and local inputs; see data/README.md
 ├── cache/                   # Local fitted-model and analysis caches; ignored
 ├── figures/main/            # Figure panels used in the main paper
 ├── figures/supplementary/   # Figure panels used in the supplement
-├── results/                 # Existing numerical summaries
-└── docs/                    # Envelope and component-discrepancy explanations
+└── results/                 # Existing numerical summaries
 ```
 
-The movement notebook and both runners retain their original experiment
-settings. The helper files have been moved and unused analysis branches pruned.
-`helpers/FigureExport.jl` contains the existing PNG/PDF export functions,
-extracted from the movement helper. No new experiment or selection algorithm
-has been introduced.
+The notebook and runners contain setup, paper experiment settings, and workflow
+calls. Figure construction and statistics formatting live in the study-specific
+helper files, including the movement state-grid export previously embedded in
+the notebook. The three original module names are retained so existing serialized
+model caches still resolve their emission types. The dog figure and statistics
+helpers share the existing pair-count calculation and compute Hungarian alignment
+without constructing unused composition figures. No new experiment or selection
+algorithm has been introduced.
 
 ## Environment and execution
 
@@ -145,5 +154,24 @@ number handling, so regenerated figures are not guaranteed to be byte-identical
 to earlier runs. Output directories are created automatically when absent.
 The repository notebook keeps its saved cell outputs cleared.
 
-See [envelope plots](docs/envelope_plots.md) and
-[KL discrepancy](docs/kl_discrepancy.md) for explanations of the diagnostics.
+### Refactor regression check
+
+On November 7, 2026, the original and refactored workflows were executed in
+separate temporary directories against the same existing input files and model
+caches, using Julia 1.12.7 and `OPENBLAS_NUM_THREADS=1`. Both elephant notebooks
+completed all 18 code cells in Julia Jupyter kernels, and both versions of each
+script completed successfully. A seed was set only in the temporary spike
+comparison harness to compare stochastic discrepancy evaluations; production
+seed handling was not changed.
+
+All 22 PNGs matched pixel-for-pixel, all 22 PDF comparisons matched after
+rendering at a maximum dimension of 1600 pixels, and all four text summaries
+matched after excluding generation timestamps. Source comparisons also verified
+that preprocessing, emission models, fitting/evaluation routines, the Hungarian
+assignment algorithm, and plotting-backend padding were preserved. The only
+fitting-file change adjusts the movement cache path for its new helper directory.
+The recorded environment and package submodule were unchanged.
+
+This was a cached before/after regression check, not another full uncached
+refit. Its temporary scripts, executed notebooks, and generated outputs are not
+part of the repository; the existing committed paper outputs were left intact.
