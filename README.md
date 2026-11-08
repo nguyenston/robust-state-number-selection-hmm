@@ -9,7 +9,7 @@ contains the paper workflows, not additional experiments.
 ```text
 .
 ├── StateSpaceDynamics.jl/    # Package fork, pinned as a Git submodule
-├── notebooks/               # Existing workflows and analysis environment
+├── notebooks/               # Paper workflows and analysis environment
 │   ├── elephant_movement.ipynb
 │   ├── run_spike_trains.jl
 │   ├── run_dog_bouthmm.jl
@@ -19,7 +19,7 @@ contains the paper workflows, not additional experiments.
 │   ├── figures/             # Main and supplementary figure panels
 │   └── results/             # Numerical summaries
 └── paper/
-    └── manuscript.pdf       # Manuscript PDF only; LaTeX sources stay separate
+    └── manuscript.pdf       # Manuscript
 ```
 
 ## Setup and execution
@@ -58,37 +58,21 @@ julia --project=notebooks notebooks/run_dog_bouthmm.jl
 
 Open `notebooks/elephant_movement.ipynb` in Jupyter with a Julia kernel and run
 all cells in order. Its setup cell activates the same environment. The package
-resolves locally to `StateSpaceDynamics.jl/`; Julia `using` statements are
-unchanged.
+resolves locally to `StateSpaceDynamics.jl/`.
 
 See [notebook documentation](notebooks/README.md) for the paper figure map,
-experiment settings, and validation scope, and [data instructions](notebooks/data/README.md)
+experiment settings, and reproducibility notes, and [data instructions](notebooks/data/README.md)
 for dataset provenance and the required external elephant GPS input. The two
 processed dog CSVs are included; other local datasets and model caches are not
 committed.
 Move `notebooks/cache/` aside before running to force a fresh refit.
 
-## Validation
-
-Fresh-refit validation completed successfully on November 6, 2026 using Julia
-1.12.7. All pre-existing study caches and outputs were moved aside. All 18
-elephant notebook code cells and both study workflows completed, regenerating
-22 PDF/PNG figure pairs and four numerical summaries. All 200 spike fits and
-280 dog fits succeeded; all three movement sweeps produced valid best fits at
-every K. The independent higher-K dog fits were parallelized using the existing
-helper, and the unchanged runner freshly evaluated all 280 fits and exported
-the results. No pre-existing fitted-model or selection-analysis cache was used.
-
-See the [validation details](notebooks/README.md#validation) for execution
-settings and scope. This validates the paper workflows with the local datasets,
-not the entire package test suite or data acquisition on a clean machine.
-
 ## Package version and license
 
 The StateSpaceDynamics submodule is pinned to
 [`642089f`](https://github.com/nguyenston/StateSpaceDynamics.jl/commit/642089f4e23b1236073335a0b246b1ec03247243)
-on the package fork's `codex/paper-reproduction` branch. Keep the recorded
-submodule revision and notebook environment when reproducing the paper.
+on the package fork. Keep the recorded submodule revision and notebook
+environment when reproducing the paper.
 
 Code is distributed under [GPL-3.0](LICENSE). Dataset licensing and attribution
 are described separately in the [data instructions](notebooks/data/README.md).
